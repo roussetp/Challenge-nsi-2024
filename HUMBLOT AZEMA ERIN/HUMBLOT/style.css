@@ -1,0 +1,53 @@
+#imageContainer {
+    position: relative;
+    /* text-align: center; */
+}
+
+#imageContainer img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 10%;
+}
+
+#clickPosition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+#infoContainer {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+#valeur {
+    font-size: 20px;
+}
+#infoContainer img{
+    max-width: 30%;
+    height: auto;
+    position: relative;
+    /* top: 20%;
+    right: 50%; */
+    border-radius: 10%;
+}
+body{
+    font-family: comic, cursive;
+}

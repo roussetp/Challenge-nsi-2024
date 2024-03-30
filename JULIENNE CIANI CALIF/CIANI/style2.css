@@ -1,0 +1,25 @@
+body
+{
+    color:black;
+    background-color: rgb(127, 176, 190);
+}
+}
+p
+{
+    color:rgb(0, 0, 5);
+    font: size 50px;
+}
+h1,h2,p,li,ol,img,table,br
+{
+    text-align: center ;
+
+}
+li
+{
+    font-weight: bold;
+    font: size 60px;
+}
+h1,
+{
+    background-color:  rgb(125, 166, 290);
+}

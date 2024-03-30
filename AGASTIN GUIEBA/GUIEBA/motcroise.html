@@ -1,0 +1,569 @@
+<!--
+1/4 pts Autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+3.5/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+16.5/20 Bon résultat se basant sur un exemple donné et beaucoup d'aides
+avec une implication pas toujours au rendez-vous
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Parc des Mamelles</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 40px;
+      height: 40px;
+      border: 0px solid rgb(2, 2, 2);
+      text-align: center;
+    }
+
+    .case {
+      font-weight: bold;
+      border: 2px solid rgb(206, 22, 22);
+      background: rgb(22, 175, 98);
+    }
+    .single-letter-input {
+            width: 20px; /* Ajustez la largeur souhaitée */
+    }
+  </style>
+</head>
+<body>
+  <p><a href="../index.html">Accueil</a></p>
+  <h1>PARC DES MAMELLES</h1>
+  AU  COEUR  DU  MASSIF  DE  LA  BASSE-TERRE ,  LE  PARC  DES  MAMELLES  CONSACRE  PLUS  DE  2  HECTARES  DE  FORET
+   TROPICALE  A  LA  CONSERVATION  D'ESPECES  ANIMALES  RARES  OU  MENACEES.
+  SITUé  SUR  LA  ROUTE  DE  LA  TRAVERSEE ,  A  L’OREE  DU  PARC  NATIONAL  DE  LA  GUADELOUPE ,  CE  PARC  SE  DISTINGUE
+   PAR  LA  TRANQUILITé  ET  LE  CARACTERE  PARFAITEMET  NATUREL  DES  LIEUX.
+  VERITABLE  ARCHE  DE  NOE  DES  TEMPS MODERNES ,  IL  ABRITE  ENVIRON  85 ESPECES  ANIMALES  DE  LA   CARAIBE  ET  DE
+   LA  GUYANE ,  REPARTIES  ENTRE  MAMMIFERES ,  OISEAUX ,  REPTILES ,  ET  ARTHROPODES  –  SOIT  PLUS  DE  450  INDIVIDUS.
+  TOUS  EVOLUENT  DANS  UN  LUXURIANT  ECRIN  DE  VERDURE  COMPOSE  DE  PLUS  DE  MILLE  ESPECES  VEGETALES .  UNE  TEMPERATURE 
+  IDEALE  ET  UN  TAUX  D'HUMIDITE  OPTIMAL  LEUR  PROCURENT  UN  CADRE  DE  VIE  DES  PLUS  AGREABLES .
+  <h2> VOUS TROUVEREZ CI-DESSOUS UN JEUX DE MOTS MELEES</h2>
+  C'est un jeu de lettres très pédagogique, et particulièrement adapté à l'apprentissage du vocabulaire et de la lecture. Il est d'ailleurs très apprécié des enfants. 
+  En raison de la taille importante des lettres figurant dans ces grilles, les mots mêlés sont aussi un jeu très adapté pour les personnes âgées ou malvoyantes.
+Vous pouvez librement imprimer chaque grille sur une seule page au format A4.
+Ces grilles sont gratuites dans un cadre de détente et de loisirs privés.
+ 
+
+
+  <table id="grille">
+    <tr> <!--Ligne 1-->
+      <td></td> <!--Case 1 de la ligne 1-->
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr> <!--Ligne 2-->
+      <td>1</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>  <!--Ligne 3-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>  <!--Ligne 4-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!--Ligne 5-->
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+    </tr>
+    <tr>  <!--Ligne 6-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td>5</td>   
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!--Ligne 7-->
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+   <tr> <!--Ligne 8-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!--Ligne 9-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td>10</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr> <!--Ligne 10-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!--Ligne 11-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td ></td>
+      <td >8</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+      
+    </tr>
+    <tr> <!--Ligne 12-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!--Ligne 13-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td ></td>
+      <td >6</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+
+    </tr>
+    <tr> <!--Ligne 14-->
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+  </table>
+
+  <div id="definition">
+    <h2>INDICE DU MOT MELEE:</h2>
+    <p id="definition1">1.   "C'EST L'EMBLEME DU ZOO"</p>         
+    <p id="definition2">2.   "QUAND ILS PINCENT SA FAIT MAL"</p>
+    <p id="definition3">3.   "IL ADORE LES BANANES"</p>
+    <p id="definition1">4.   "LA VIPERE DONT ONT CRAINTS LES MORSURES"</p>
+    <p id="definition1">5.   "ON DIT QUE C'EST UN FELIN QUI HABITE SUR LA TROISIEME PLANETE EN PARTANT DU SOLEIL"</p>
+    <p id="definition1">6.   "ON DIT QUE C'EST UN CHIPEUR RUSEE"</p>
+    <p id="definition1">7.   "C'EST UN ANIMAL BOITEUX"</p>
+    <p id="definition1">8.   "PETIT RONGEUR QUI EST AUSSI UN ANIMAL DE COMPAGNIE"</p>
+    <p id="definition1">9.   "C'EST UN FELIN TACHETEE"</p>
+    <p id="definition1">10.  "IL REPETE SOUVENT CE QU'ON LUI DIT"</p> 
+    <p id="definition1">11.  "LE ROI DE LA JUNGLE"</p>
+    <p id="definition1">12.  "IL EST AUSSI LENT ET LOURD QUE SA CARAPACE"</p>
+
+  </div>
+</body>
+<script>
+  // Fonction pour comparer deux tableaux
+  function comparerTableaux(tableau1, tableau2) {
+      if (tableau1.length !== tableau2.length) {
+          return false;
+      }
+      for (var i = 0; i < tableau1.length; i++) {
+        if (tableau1[i].length !== tableau2[i].length) {
+            return false;
+        }
+        for (var j = 0; j < tableau1[i].length; j++) {
+            if (tableau1[i][j] !== tableau2[i][j]) {
+                return false;
+            }
+        }
+      }
+      return true;
+  }
+
+  function editCell(cell) {
+    // Créer un champ d'entrée de texte
+    var input = document.createElement("input");
+    input.type = "text";
+    input.maxLength = 1; // Limiter la saisie à une seule lettre
+    input.className = "single-letter-input "; // Ajouter une classe pour le style
+
+    // Récupérer le contenu actuel de la cellule
+    var currentContent = cell.innerHTML.trim();
+
+    // Définir la valeur du champ d'entrée de texte comme le contenu actuel de la cellule
+    input.value = currentContent;
+
+    // Ajouter le champ d'entrée de texte à la cellule
+    cell.innerHTML = "";
+    cell.appendChild(input);
+
+    // Mettre le focus sur le champ d'entrée de texte
+    input.focus();
+
+    // Ajouter un gestionnaire d'événements pour détecter la fin de l'édition
+    input.addEventListener("blur", function () {
+        // Valider et mettre à jour le contenu de la cellule avec la valeur du champ d'entrée de texte (en majuscules)
+        var newValue = input.value.toUpperCase();
+        cell.innerHTML = newValue;
+        var grilleCompletee = recupererValeursTableau(); // récupère les valeurs du tableau
+        //console.log(grilleCompletee); // affiche dans la console
+
+        var grilleSolution = [
+                ['', '', '', '2', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['1', 'R', 'A', 'C', 'O', 'O', 'N', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['', '', '', 'R', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['', '', '', 'A', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['', '', '3', 'B', 'A', 'B', 'O', 'U', 'I', 'N', '', '', '9', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['', '', '', 'E', '', '', '5', '', '', '', '', '', 'L', '', '', '', '11', '', '', '', '', '', '', '', ''],
+                ['', '', '4', 'S', 'E', 'R', 'P', 'E', 'N', 'T', '', '', 'E', '', '', '', 'L', '', '', '', '', '', '', '', ''],
+                ['', '', '', '', '', '', 'A', '', '', '', '', '', 'O', '', '', '', 'I', '', '', '', '12', '', '', '', ''],
+                ['', '', '', '7', 'C', 'A', 'N', 'A', 'R', 'D', '', '10', 'P', 'E', 'R', 'R', 'O', 'Q', 'U', 'E', 'T', '', '', '', ''],
+                ['', '', '', '', '', '', 'T', '', '', '', '', '', 'A', '', '', '', 'N', '', '', '', 'O', '', '', '', ''],
+                ['', '', '', '', '', '8', 'H', 'A', 'M', 'S', 'T', 'E', 'R', '', '', '', '', '', '', '', 'R', '', '', '', ''],
+                ['', '', '', '', '', '', 'E', '', '', '', '', '', 'D', '', '', '', '', '', '', '', 'T', '', '', '', ''],
+                ['', '', '', '', '', '6', 'R', 'E', 'N', 'A', 'R', 'D', '', '', '', '', '', '', '', '', 'U', '', '', '', ''],
+                ['', '', '', '', '', '', 'E', '', '', '', '', '', '', '', '', '', '', '', '', '', 'E', '', '', '', ''],
+                            ];
+        //alert(grille)
+        //alert(grilleCompletee)
+        if (comparerTableaux(grilleSolution, grilleCompletee)) {
+          alert("Trouvé");
+        }
+    });
+  }
+
+      // Fonction pour récupérer les valeurs des cellules
+      function recupererValeursTableau() {
+        // Récupérer le tableau par son identifiant
+        var tableau = document.getElementById("grille");
+
+        // Initialiser un tableau pour stocker les valeurs
+        var valeurs = [];
+
+        // Parcourir les lignes du tableau
+        for (var i = 0; i < tableau.rows.length; i++) {
+            // Initialiser un tableau pour stocker les valeurs de la ligne actuelle
+            var valeursLigne = [];
+
+            // Parcourir les cellules de la ligne actuelle
+            for (var j = 0; j < tableau.rows[i].cells.length; j++) {
+                // Ajouter la valeur de la cellule au tableau
+                valeursLigne.push(tableau.rows[i].cells[j].innerHTML);
+            }
+
+            // Ajouter le tableau de valeurs de la ligne au tableau principal
+            valeurs.push(valeursLigne);
+        }
+
+        return valeurs;
+    }
+
+    // Appeler la fonction et récupérer les valeurs
+    //var valeursDuTableau = recupererValeursTableau();
+
+    // Afficher les valeurs dans la console
+    //console.log(valeursDuTableau);
+</script>
+</html>

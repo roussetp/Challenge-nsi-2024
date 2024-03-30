@@ -1,0 +1,293 @@
+<!--
+3.5/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+3/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+0/1 pts site Web constitué et opérationnel
+17.5/20 Bon travail
+-->
+
+<html>
+  
+    <head>
+        <meta>
+        
+        <title>Champs</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Js.js">
+        <style>
+            table {
+              border-collapse: collapse;
+            }
+        
+            td {
+              width: 30px;
+              height: 30px;
+              border: 0px solid white;
+              text-align: center;
+            }
+        
+            .case {
+              font-weight: bold;
+              border: 2px solid black;
+              background: rgb(66, 66, 60);
+            }
+            .single-letter-input {
+                    width: 20px; /* Ajustez la largeur souhaitée */
+            }
+          </style>
+    </head>
+
+    
+
+    <body>
+        <h1>Les Champs Elysées:</h1>
+        
+        <button onclick="afficherChampsÉlysées()" title="L'avenue des Champs-Élysées">L'avenue des Champs-Élysées</button>
+        <div id="ChampsÉlysées">
+          <p>L'avenue des Champs-Élysées est située dans le 8e arrondissement de Paris, dans le nord-ouest de la ville. Elle s'étend sur 1 910 mètres, d'est en ouest, reliant la place de la Concorde, où se dresse l'obélisque de Louxor, et la place Charles-de-Gaulle.Elle tire son nom des champs Élysées, le lieu des Enfers où séjournaient les âmes vertueuses dans la mythologie grecque.</p>
+          <button onclick="cacherChampsÉlysées()" title="Cacher">-</button>
+        </div>
+        
+        <button onclick="afficherLeparadisdushopping()" title="'Le paradis du shopping">Le paradis du shopping</button>
+        <div id="Leparadisdushopping">
+          <p>Côté shopping, les Champs-Élysées comptent de très nombreuses enseignes. Mode, beauté, sports… Il y en a pour tous les goûts.Prestige oblige, plusieurs maisons de luxe y ont élu domicile.
+            On y retrouve de célèbres marques françaises tel que les mocassins de <a href="https://eu.jmweston.com/"target="_blank">J.M. Weston</a>, 
+            le polo au crocodile de <a href="https://www.lacoste.com/fr/"target="_blank">Lacoste</a>, 
+            le cultissime sac pliage de <a href="https://www.longchamp.com/fr/fr/"target="_blank">Longchamp</a> ou encore
+             les pulls en cachemire <a href="https://www.petit-bateau.fr/"target="_blank">Petit Bateau</a> d’Éric Bompard 
+          </p>
+          <button onclick="cacherLeparadisdushopping()" title="Cacher">-</button>
+        </div>
+
+        <button onclick="afficherEvénements()" title="Evénements">Evénements</button>
+        <div id="Evénements">
+          <p>Tout au long de l’année, les Champs-Élysées vibrent au rythme de nombreux événements.
+
+            Pour la <a href="https://www.elysee.fr/la-presidence/la-fete-nationale-du-14-juillet"target="_blank">Fête Nationale</a>, l’avenue est absolument incontournable car elle se pare aux couleurs de la France et accueille le fameux défilé du 14 juillet.
+            
+            Côté sport, ils donnent le top départ du <a href="https://www.schneiderelectricparismarathon.com/"target="_blank">Marathon de Paris</a> (en avril) et voient les cyclistes du <a href="https://www.letour.fr/fr/"target="_blank">tour de France</a>  franchir la ligne d’arrivée de la dernière étape (en juillet).
+            
+            Au mois de juin, c’est le <a href="http://www.champselyseesfilmfestival.com/2023//"target="_blank">Champs-Elysées Film Festival</a> qui investit l’avenue. Pendant 8 jours, le meilleur du cinéma indépendant français et américain est à l’honneur. Au programme : projections, rencontres, showcases… Une semaine placée sous le signe du 7e art. À cette occasion, le rooftop de l’immeuble Publicis est spécialement ouvert.
+            
+            Pour les fêtes de fin d’année, les Champs Élysées brillent de mille feux et se redécouvrent illuminés de toute part. Le 31 décembre, ils accueillent la nouvelle année avec un décompte final projeté sur <a href="https://www.paris-arc-de-triomphe.fr/"target="_blank">l'Arc de Triomphe</a>.
+          </p>
+          <button onclick="cacherEvénements()" title="Cacher">-</button>
+        </div>
+        <br>
+        <br>
+       
+        
+        <h1>Mots Croisés</h1>
+        
+
+        <table id="grille">
+        <tr> <!--Ligne 1-->
+          <td></td>
+          <td></td> <!--Case 1 de la ligne 1-->
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td class="case" onclick="editCell(this)">R</td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td class="case" onclick="editCell(this)">R</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="case" onclick="editCell(this)"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td> 
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td> 
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="case" onclick="editCell(this)">A</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)">E</td>
+      <td></td>
+      <td></td>   
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  
+    <h2>Définitions :</h2>
+    <p>1. C'est le role du président</p>
+    <p>2. Qui compose l'avenue</p>
+    <p>3. Elle porte le nom de Triomphe</p>
+  
+
+    </body>
+    <script>
+
+      document.querySelector('#ChampsÉlysées').style.visibility="hidden";
+      function afficherChampsÉlysées()
+      {
+          document.querySelector('#ChampsÉlysées').style.visibility="visible";
+      }
+      function cacherChampsÉlysées()
+      {
+          document.querySelector('#ChampsÉlysées').style.visibility="hidden";
+      }
+      
+      document.querySelector('#Leparadisdushopping').style.visibility="hidden";
+      function afficherLeparadisdushopping()
+      {
+          document.querySelector('#Leparadisdushopping').style.visibility="visible";
+      }
+      function cacherLeparadisdushopping()
+      {
+          document.querySelector('#Leparadisdushopping').style.visibility="hidden";
+      }
+
+      document.querySelector('#Evénements').style.visibility="hidden";
+      function afficherEvénements()
+      {
+          document.querySelector('#Evénements').style.visibility="visible";
+      }
+      function cacherEvénements()
+      {
+          document.querySelector('#Evénements').style.visibility="hidden";
+      }
+      
+        // Fonction pour comparer deux tableaux
+        function comparerTableaux(tableau1, tableau2) {
+            if (tableau1.length !== tableau2.length) {
+                return false;
+            }
+            for (var i = 0; i < tableau1.length; i++) {
+              if (tableau1[i].length !== tableau2[i].length) {
+                  return false;
+              }
+              for (var j = 0; j < tableau1[i].length; j++) {
+                  if (tableau1[i][j] !== tableau2[i][j]) {
+                      return false;
+                  }
+              }
+            }
+            return true;
+        }
+      
+        function editCell(cell) {
+          // Créer un champ d'entrée de texte
+          var input = document.createElement("input");
+          input.type = "text";
+          input.maxLength = 1; // Limiter la saisie à une seule lettre
+          input.className = "single-letter-input "; // Ajouter une classe pour le style
+      
+          // Récupérer le contenu actuel de la cellule
+          var currentContent = cell.innerHTML.trim();
+      
+          // Définir la valeur du champ d'entrée de texte comme le contenu actuel de la cellule
+          input.value = currentContent;
+      
+          // Ajouter le champ d'entrée de texte à la cellule
+          cell.innerHTML = "";
+          cell.appendChild(input);
+      
+          // Mettre le focus sur le champ d'entrée de texte
+          input.focus();
+      
+          // Ajouter un gestionnaire d'événements pour détecter la fin de l'édition
+          input.addEventListener("blur", function () {
+              // Valider et mettre à jour le contenu de la cellule avec la valeur du champ d'entrée de texte (en majuscules)
+              var newValue = input.value.toUpperCase();
+              cell.innerHTML = newValue;
+              var grilleCompletee = recupererValeursTableau(); // récupère les valeurs du tableau
+              //console.log(grilleCompletee); // affiche dans la console
+      
+              var grilleSolution = [
+                      ['','','', '', '', '2', '', '', '', '',''],
+                      ['','','1', 'D', 'I', 'R', 'I', 'G', 'E', 'R'],
+                      ['','', '', '', '', 'O', '', '', '',''],
+                      ['','','', '', '', '', 'U', '', '', ''],
+                      ['','', '', '', '', 'T', '', '', '',''],
+                      ['3','A', 'R', 'C', 'H', 'E', '', '', '','']
+                                          ];
+              //alert(grille)
+              //alert(grilleCompletee)
+              if (comparerTableaux(grilleSolution, grilleCompletee)) {
+                alert("Trouvé");
+              }
+          });
+        }
+            // Fonction pour récupérer les valeurs des cellules
+            function recupererValeursTableau() {
+              // Récupérer le tableau par son identifiant
+              var tableau = document.getElementById("grille");
+      
+              // Initialiser un tableau pour stocker les valeurs
+              var valeurs = [];
+      
+              // Parcourir les lignes du tableau
+              for (var i = 0; i < tableau.rows.length; i++) {
+                  // Initialiser un tableau pour stocker les valeurs de la ligne actuelle
+                  var valeursLigne = [];
+      
+                  // Parcourir les cellules de la ligne actuelle
+                  for (var j = 0; j < tableau.rows[i].cells.length; j++) {
+                      // Ajouter la valeur de la cellule au tableau
+                      valeursLigne.push(tableau.rows[i].cells[j].innerHTML);
+                  }
+      
+                  // Ajouter le tableau de valeurs de la ligne au tableau principal
+                  valeurs.push(valeursLigne);
+              }
+      
+              return valeurs;
+          }
+          // Appeler la fonction et récupérer les valeurs
+          //var valeursDuTableau = recupererValeursTableau();
+      
+          // Afficher les valeurs dans la console
+          //console.log(valeursDuTableau);
+      </script>
+  
+</html>

@@ -1,0 +1,69 @@
+
+<!--CALIF-->
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+2/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pt site Web constitué et opérationnel
+18/20 Bon travail. Manque davantage de CSS pour enjoliver davantage
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href = "guadeloupe.css">
+        <meta charset="uft-8">
+        <title>LA GUADELOUPE</title>
+    </head>
+    <body>
+        <h1>LA GUADELOUPE</h1> 
+        <div>
+            <ul>
+                <li><a href="info gp.html">Informations</a></li>
+                <li><a href="Quizz.html">Quizz Info</a></li>
+                <li><a href="CIANI/index.html">Quizz Nom</a></li>
+                <li><a href="JULIENNE/index.html">Quizz Lieu</a></li>
+            </ul>
+        </div>
+
+        <img src="antan.jpg" title="avant"/>
+        <h2><u>GUADELOUPE " AN TAN LONTAN " :</_u></h2> 
+        <button onclick="afficherantanlontan()" title="avant">An tan lontan</button>
+        <div id="avant">
+        <p>Au moins 3000 ans avant J.-C., la Guadeloupe est peuplée par des populations amérindiennes. Vers 300 avant J.-C., les Indiens Arawaks s'installent dans la région. Arrivés du bassin de l'Orénoque, dans l'actuel Vénézuela, c'est un peuple d'agriculteurs et de pêcheurs.
+         Cependant, vers le VIIIe siècle, ils auraient été exterminés par de nouveaux venus, les Indiens Caraïbes, originaires de la même région1. Ils nomment l'île Caloucaera (Karukera), mot voulant dire « l'île aux belles eaux ».</p>
+        <button onclick="cacher()" title="cacher">cacher</button>
+        </div>
+        <img src="guadeloupe.jpg" title="maintenant"/>
+        <h2><u> GUADELOUPE " MAINTENANT " :</u></h2>
+        <button onclick="afficheraprezan()" title="maintenant">maintenant</button>
+        <div id="maintenant">
+        <p>La Guadeloupe se présente tel un papillon aux ailes déployées, entouré de quelques îles satellites plus petites. Ce papillon correspond à la Guadeloupe continentale, regroupement de Basse-Terre à l’ouest et de Grande-Terre à l’est. Ces deux îles sont séparées par un étroit canal connu sous le nom de Rivière Salée. Elles s’entourent de trois îles, la plus grande, Marie-Galante, puis la Désirade, et enfin les Saintes, petit archipel de 14 km². La Guadeloupe, comme ses voisines des Antilles, est agréable à visiter une majeure partie de l’année. A certaines saisons, de juillet à octobre tout particulièrement, il n’est pas rare que la température de l’eau dépasse les 30°C !</p>
+        <button onclick="masquer()" title="masquer">masquer</button>
+        </div>
+         
+     </body>
+     <script>
+        document.querySelector('#avant').style.visibility="hidden";
+        function afficherantanlontan()
+        {
+            document.querySelector('#avant').style.visibility="visible";
+        }
+        function cacher()
+        {
+            document.querySelector('#avant').style.visibility="hidden";
+        }
+        
+        document.querySelector('#maintenant').style.visibility="hidden";
+
+         function afficheraprezan()
+         {
+             document.querySelector('#maintenant').style.visibility="visible";
+         }
+         function masquer()
+         {
+             document.querySelector('#maintenant').style.visibility="hidden";
+         }
+     </script>
+ </html>
+       

@@ -1,0 +1,219 @@
+<html>
+
+	<head> 
+		<meta charset="utf-8">
+        <title>QUIZAMIDE</title>
+        <link rel="stylesheet" href="style.css"> 
+		<link rel="shortcut icon" href="pyramide.png" />
+
+        <script language="JavaScript"> 
+
+			
+			var rep = new Array;  // 
+			var faite = new Array;  // 
+			var score = 0;  // 
+ 
+			// 
+			rep[1] = "b";
+			rep[2] = "c";
+			rep[3] = "a";
+			rep[4] = "d";
+			rep[5] = "b";
+			rep[6] = "c";
+			rep[7] = "a";
+
+ 
+// 
+//
+//   
+function test(question, reponse) {
+
+    if (reponse != rep[question]) {
+        if (!faite[question]) {  // 
+            faite[question] = -1;  // 
+            alert("Raté !   C'était la ." + rep[question] + " ");
+            }
+        else {
+            alert("Cette question à déjà été répondue.");
+            }           
+        }
+    else {
+        if (!faite[question]) {
+            faite[question] = -1; 
+            score++; //
+            alert("Bien joué ! C'est la bonne réponse ! ");
+            }
+        else { 
+            alert("Cette question à déjà été répondue.");
+            }
+        }
+}
+
+//
+
+function afficherLesResultats () 
+{
+
+	resultats=document.getElementById("resultats"); 
+	// 
+	// 
+		if (score ==7){resultats.innerHTML="<h1>Ton score est de : 7/7 </h1>"}
+		else if (score ==6){resultats.innerHTML="<h1>Ton score est de : 6/7 </h1>"}
+		else if (score ==5){resultats.innerHTML="<h1>Ton score est de : 5/7 </h1>"}
+		else if (score ==4){resultats.innerHTML="<h1>Ton score est de : 4/7 </h1>"}
+		else if (score ==3){resultats.innerHTML="<h1>Ton score est de : 3/7 </h1>"}
+		else if (score ==2){resultats.innerHTML="<h1>Ton score est de : 2/7 </h1>"}
+		else if (score ==1){resultats.innerHTML="<h1>Ton score est de : 1/7 </h1>"}
+		else if (score ==0){resultats.innerHTML="<h1>Ton score est de : 0/7 </h1>"}
+
+
+    appreciation=document.getElementById("appreciation");
+	//
+	// 
+   		if (score ==7) {appreciation.innerHTML="<h2>Un score parfait !! Bien joué !</h2>"}
+		else if (score > 4 && score <= 6) {appreciation.innerHTML="<h2>Bon score ! Pas loin de la perfection...</h2>"}
+		else if (score >= 2 && score <=4) {appreciation.innerHTML="<h2>Mouais...Peut mieux faire</h2>"}
+		else if (score < 2) {appreciation.innerHTML="<h2>Oualala, il faudrait peut-être penser à relire l'histoire :)</h2>"}
+
+
+	// 
+	faite = new Array;
+	score = 0;
+	document.quest.reset();
+}
+
+</script>
+	</head>
+
+    <body> 
+        <div class="bloc_page">
+
+        	
+
+			<header> 
+				<div id="titre_principal">
+					<img src="pypy.gif"id=Pygif />
+					<h1> QUIZAMIDE</h1>					
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="index.html">Les Pyramides de Gizeh</a></li>
+					</ul>
+				</div>
+			</header>
+
+			
+
+			<section id ="quizz"> 
+
+			<form name="quest">
+
+			<h1>Faisons un petit quizz pour voir si vous avez bien tout suivi :)</h1>
+			</br>
+
+			<!--  -->
+			<div class=bloc_question> <!-- -->
+				<h2>1 ➜ Quelle est la plus grande des pyramides ?</h2> <!--  -->
+				<p>
+				<!-- -->
+					<br><input type="radio" name="1" value="a" onclick="test(1, this.value)">a. Pyramide de Khéphren
+					<br><input type="radio" name="1" value="b" onclick="test(1, this.value)">b. Pyramide de Khéops
+					<br><input type="radio" name="1" value="c" onclick="test(1, this.value)">c. Pyramide de Mykérinos
+					<br><input type="radio" name="1" value="d" onclick="test(1, this.value)">d.Sphinx de Gizeh
+				</p>
+			</div>
+			</br></br> <!--  -->
+
+			<div class=bloc_question>
+				<h2>2 ➜ Quel est l'autre nom des pyramides de Gizeh ?</h2>
+				<p>
+					<br><input type="radio" name="2" value="a" onclick="test(2, this.value)">a. Les Pyramides Géniales 
+					<br><input type="radio" name="2" value="b" onclick="test(2, this.value)">b. Pyramides d'Egypte
+					<br><input type="radio" name="2" value="c" onclick="test(2, this.value)">c. Le complexe pyramidal de Gizeh 
+					<br><input type="radio" name="2" value="d" onclick="test(2, this.value)">d. Le complexe d'Egypte
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>3 ➜ Depuis quand sont-elles considérées patrimoine mondial ?</h2>
+				<p>
+					<br><input type="radio" name="3" value="a" onclick="test(3, this.value)">a. 1979
+					<br><input type="radio" name="3" value="b" onclick="test(3, this.value)">b. 2024
+					<br><input type="radio" name="3" value="c" onclick="test(3, this.value)">c. 2007
+					<br><input type="radio" name="3" value="d" onclick="test(3, this.value)">d. 1989
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>4 ➜ Qu'est-ce qu'il se trouve dans ces pyramides ?</h2>
+				<p>
+					<br><input type="radio" name="4" value="a" onclick="test(4, this.value)">a. De l'argent
+					<br><input type="radio" name="4" value="b" onclick="test(4, this.value)">b. Du Sable 
+					<br><input type="radio" name="4" value="c" onclick="test(4, this.value)">c. Le dernier album de Beyoncé
+					<br><input type="radio" name="4" value="d" onclick="test(4, this.value)">d. Les sépultures de Pharaons
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>5 ➜ Quand furent-elles construites ?</h2>
+				<p>
+					<br><input type="radio" name="5" value="a" onclick="test(5, this.value)">a. En l'an 900 
+					<br><input type="radio" name="5" value="b" onclick="test(5, this.value)">b. Entre 2550 et 2490 ans avant J.-C
+					<br><input type="radio" name="5" value="c" onclick="test(5, this.value)">c. Entre l'an 0 et l'an 30
+					<br><input type="radio" name="5" value="d" onclick="test(5, this.value)">d. Entre 5680 et 4320 avant J.-C
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>6 ➜ Quel est le rôle du Sphinx de Gizeh ? </h2>
+				<p>
+					<br><input type="radio" name="6" value="a" onclick="test(6, this.value)">a. Il sert à faire joli
+					<br><input type="radio" name="6" value="b" onclick="test(6, this.value)">b. Il cache un trésor d'Egypte
+					<br><input type="radio" name="6" value="c" onclick="test(6, this.value)">c. Il est considéré comme le gardien du site 
+					<br><input type="radio" name="6" value="d" onclick="test(6, this.value)">d. La réponse d
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>7 ➜ Le sphinx est connu pour ressembler à quel pharaon ?</h2>
+				<p>
+					<br><input type="radio" name="7" value="a" onclick="test(7, this.value)">a. Khéops
+					<br><input type="radio" name="7" value="b" onclick="test(7, this.value)">b. Khéphren
+					<br><input type="radio" name="7" value="c" onclick="test(7, this.value)">c. Mykérinos
+					<br><input type="radio" name="7" value="d" onclick="test(7, this.value)">d. Nefertiti
+				</p>
+			</div>
+			</br></br>
+
+
+			<p><input type="button" name="Resultats" value="Résultats" id="bouton_resultats" onclick="afficherLesResultats()"></p> <!---->
+
+			<div id="resultats"></div> <!--  -->
+			<div id="appreciation"></div> <!---->
+			</br>
+			</form>
+
+			<div class="bouton_fin"> <!--  -->
+  				<p>
+   					<a href="LesPyramidesDeGizeh.html">Retour à la page principale</a>
+ 				</p>
+			</div>
+		</section>
+
+		<!--  -->
+
+		<footer> <!--  -->
+			<p>
+			</p>
+		</footer>
+
+		</div>
+    </body>
+</html>
+

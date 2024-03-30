@@ -1,0 +1,51 @@
+body
+{
+    color: rgb(24, 90, 28);
+    background-image: url("jaune_LI.jpg");
+}
+#gif
+{
+    justify-content: center;
+    background-color: #FFFC9B ;
+    opacity : 1 ;
+    border : 2px #f5f825 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+
+}
+
+#accueil
+{
+    
+    /*display: flex ;*/
+    justify-content: center;
+    background-color: #ebe39b ;
+    opacity : 1 ;
+    border : 2px #ffd037 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+    color: rgb(24, 90, 28);
+
+}
+
+#quizz
+{
+    
+    /*display: flex ;*/
+   
+    justify-content: center;
+    background-color:#ebe39b  ;
+    opacity : 1 ;
+    border : 2px #ffd037 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+    color: rgb(24, 90, 28);
+}
+
+

@@ -1,0 +1,97 @@
+<!--
+0.5/3 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+2/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+3/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+13.5/20 Dommage votre manque d'implication pour avancer et terminer votre page Web
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Identification de la position du clic</title>
+  <style>
+    body
+    {
+      background-image: url("background1.jpg");
+      background-attachment: fixed ;
+      background-size: cover;
+      font-family: cursive;
+    }
+    #imageContainer {
+      position: relative;
+    }
+    #imageContainer img {
+      max-width: 100%;
+      height: auto;
+    }
+    #clickPosition {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: rgb(255, 166, 0);
+      background-color: rgba(255, 0, 0, 0.5);
+      padding: 5px;
+    }
+    aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #d7c719;
+    font-style: italic;
+    color: #e2b810;
+    }
+
+    aside > p {
+      margin: 0.5rem;
+      border: solid 5px #dbac11;
+      background-color: #d7c719;
+      border-radius: 30px;
+      color : black
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <p><a href="../index.html">Accueil</a></p>
+    <aside>
+      <p>Question :</p>
+      <p id="question"></p>
+    </aside>
+    <p>
+    <div id="imageContainer">
+      <img src="Capture pyramides.PNG" alt="Pyramides" id="image" />
+    </div>
+    </p>
+  </section>
+  <script>
+  var listeQuestions = [
+  ['<p>Trouve la pyramide de Khéops</p> <p><img src="Kheops.png" alt="Pyramides" id="image" width= "200px"></p>', [334, 442], [69, 173]],
+  ['Trouve la pyramide de Mykérinos,</p> <p><img src="mykerinos.png" alt="Pyramides" id="image" width= "200px"></p>', [84, 453], [127, 499]]
+];
+
+    document.getElementById('question').innerHTML=listeQuestions[0][0]; // question initiale
+    document.addEventListener('DOMContentLoaded', function() {
+    var imageContainer = document.getElementById('imageContainer');
+    var num_question = 0  
+    imageContainer.addEventListener('click', function(event) {
+      var image = document.getElementById('image');
+      
+  
+      var x = event.clientX;
+      var y = event.clientY;  
+      alert('Position du clic : x = ' + x + ', y = ' + y);
+      if ((x > (listeQuestions[num_question][1][0])) && (x < (listeQuestions[num_question][1][1])) && (y > (listeQuestions[num_question][2][0])) && (y < (listeQuestions[num_question][2][1]))) {
+        alert("Woulo")
+        num_question += 1;
+        document.getElementById('question').innerHTML=listeQuestions[num_question][0];
+
+      }
+
+    });
+    });
+  </script>
+</body>
+</html>

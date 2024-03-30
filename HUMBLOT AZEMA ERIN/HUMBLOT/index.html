@@ -1,0 +1,37 @@
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pt site Web constitué et opérationnel
+20/20 Il manque les liens de retour vers l'accueil et de la mise en forme
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identification de la position du clic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>Découvre le lycée Charles Coeffin !</h1>
+  <p><a href="../index.html">Accueil</a></p>
+  <h2>Clique sur une des balises de la carte pour découvrir ce qu'il s'y trouve !</h2>
+  <div class="container">
+    <div id="imageContainer" style="position: relative;">
+      <img src="coeffin.jpg" alt="coeffin" id="image" style="display: block; max-width: 50%; float:inline-end;" />
+      <div id="infoContainer" class="infoContainer">
+        <p><span id="bat" class="valeur"></span></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

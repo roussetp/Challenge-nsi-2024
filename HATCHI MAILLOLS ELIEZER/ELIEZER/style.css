@@ -1,0 +1,29 @@
+body{
+    background-image: url(degrade-orange-couleur-fond.jpg);
+    background-size: auto;
+    width : 1500px;
+    margin: auto
+}
+#Lecolombo
+{ 
+    display: flex;
+    justify-content: space-between ;
+    background-color: bisque ;
+    opacity: 0.9 ;
+    border: 2px ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px ;
+    margin: 5% auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz sur les Animaux</title>
+    <style>
+    body {
+            background-image: url('img.gif');
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative; /* Ajout de cette ligne pour positionner le bouton */
+        }
+
+        section h1 {
+            color: #ffcc00;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .options button {
+            display: block;
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .options button:disabled {
+            cursor: not-allowed;
+        }
+
+        #score {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #congrats {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            color: green;
+        }
+
+        .indicator {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        #home-button {
+            display: block;
+            position: absolute;
+            top: 10px; /* Ajustez la valeur pour régler la position verticale */
+            right: 10px; /* Ajustez la valeur pour régler la position horizontale */
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FF0000; /* Rouge pour le bouton Accueil */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .indicateur {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div id="quiz-container">
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>Quel est le plus grand animal terrestre?</h2>
+                <div class="options" id="q1-options">
+                    <button onclick="checkAnswer(1, 'Éléphant')">Éléphant</button>
+                    <button onclick="checkAnswer(1, 'Girafe')">Girafe</button>
+                    <button onclick="checkAnswer(1, 'Hippopotame')">Hippopotame</button>
+                </div>
+                <span class="indicator" id="q1-indicator"></span>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>Combien de pattes a une araignée?</h2>
+                <div class="options" id="q2-options">
+                    <button onclick="checkAnswer(2, '6')">6</button>
+                    <button onclick="checkAnswer(2, '8')">8</button>
+                    <button onclick="checkAnswer(2, '10')">10</button>
+                </div>
+                <span class="indicator" id="q2-indicator"></span>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>Où vivent les pingouins?</h2>
+                <div class="options" id="q3-options">
+                    <button onclick="checkAnswer(3, 'Arctique')">Arctique</button>
+                    <button onclick="checkAnswer(3, 'Antarctique')">Antarctique</button>
+                    <button onclick="checkAnswer(3, 'Amazonie')">Amazonie</button>
+                </div>
+                <span class="indicator" id="q3-indicator"></span>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>Quel est le plus grand reptile?</h2>
+                <div class="options" id="q4-options">
+                    <button onclick="checkAnswer(4, 'Crocodile')">Crocodile</button>
+                    <button onclick="checkAnswer(4, 'Serpent python')">Serpent python</button>
+                    <button onclick="checkAnswer(4, 'Tortue géante')">Tortue géante</button>
+                </div>
+                <span class="indicator" id="q4-indicator"></span>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h2>Quel est l'oiseau le plus rapide?</h2>
+                <div class="options" id="q5-options">
+                    <button onclick="checkAnswer(5, 'Faucon pèlerin')">Faucon pèlerin</button>
+                    <button onclick="checkAnswer(5, 'Aigle royal')">Aigle royal</button>
+                    <button onclick="checkAnswer(5, 'Colibri')">Colibri</button>
+                </div>
+                <span class="indicator" id="q5-indicator"></span>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h2>Quelle est la plus grande espèce de tortue marine?</h2>
+                <div class="options" id="q6-options">
+                    <button onclick="checkAnswer(6, 'Tortue luth')">Tortue luth</button>
+                    <button onclick="checkAnswer(6, 'Tortue verte')">Tortue verte</button>
+                    <button onclick="checkAnswer(6, 'Tortue imbriquée')">Tortue imbriquée</button>
+                </div>
+                <span class="indicator" id="q6-indicator"></span>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h2>Combien de bras a une étoile de mer?</h2>
+                <div class="options" id="q7-options">
+                    <button onclick="checkAnswer(7, '5')">5</button>
+                    <button onclick="checkAnswer(7, '8')">8</button>
+                    <button onclick="checkAnswer(7, '10')">10</button>
+                </div>
+                <span class="indicator" id="q7-indicator"></span>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h2>Quel est l'oiseau national des États-Unis?</h2>
+                <div class="options" id="q8-options">
+                    <button onclick="checkAnswer(8, 'Pygargue à tête blanche')">Pygargue à tête blanche</button>
+                    <button onclick="checkAnswer(8, 'Faucon pèlerin')">Faucon pèlerin</button>
+                    <button onclick="checkAnswer(8, 'Hibou grand-duc')">Hibou grand-duc</button>
+                </div>
+                <span class="indicator" id="q8-indicator"></span>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h2>Quel est le plus grand mammifère marin?</h2>
+                <div class="options" id="q9-options">
+                    <button onclick="checkAnswer(9, 'Baleine bleue')">Baleine bleue</button>
+                    <button onclick="checkAnswer(9, 'Orque')">Orque</button>
+                    <button onclick="checkAnswer(9, 'Dauphin')">Dauphin</button>
+                </div>
+                <span class="indicator" id="q9-indicator"></span>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h2>Quel est le plus grand insecte du monde?</h2>
+                <div class="options" id="q10-options">
+                    <button onclick="checkAnswer(10, 'Mégalodon')">Mégalodon</button>
+                    <button onclick="checkAnswer(10, 'Goliath birdeater')">Goliath birdeater</button>
+                    <button onclick="checkAnswer(10, 'Cafard')">Cafard</button>
+                </div>
+                <span class="indicator" id="q10-indicator"></span>
+            </div>
+
+        <div id="score"></div>
+
+        <div id="congrats">Félicitations! Tu as gagné!</div>
+
+        <button id="home-button" onclick="redirectToHome()">Accueil</button>
+
+        
+    </section>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        var score = 0;
+
+        function checkAnswer(questionNumber, selectedOption) {
+            var indicator = document.getElementById('q' + questionNumber + '-indicator');
+            var options = document.getElementById('q' + questionNumber + '-options').getElementsByTagName('button');
+            for (var i = 0; i < options.length; i++) {
+                options[i].disabled = true; // Désactiver tous les boutons d'options
+            }
+            if (questionNumber === 1 && selectedOption === 'Éléphant') {
+                score++;
+                indicator.innerHTML = '<img src="fleche_verte.png" class="indicateur">';
+            } else if (questionNumber === 2 && selectedOption === '8') {
+                score++;
+                indicator.innerHTML = '<img src="fleche_verte.png" class="indicateur">';
+            } // Ajoutez des conditions pour les autres questions
+            else {
+                indicator.innerHTML = '<img src="croix_rouge.png" class="indicateur">';
+            }
+            // Affichage du score après chaque réponse
+            document.getElementById('score').innerHTML = 'Score: ' + score + '/10';
+
+            // Si toutes les questions ont été répondues, afficher le message de félicitations
+            if (score === 10) {
+                document.getElementById('congrats').style.display = 'block';
+            }
+        }
+
+        function redirectToHome() {
+            window.location.href = 'index.html'; // Assurez-vous d'avoir un fichier parcs_des_mamelles.html avec le même style de fond
+        }
+    </script>
+
+</body>
+</html>

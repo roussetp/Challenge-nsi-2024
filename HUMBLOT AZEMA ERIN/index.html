@@ -1,0 +1,229 @@
+
+<!--ERIN-->
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pt site Web constitué et opérationnel
+20/20 Très bon travail !
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Charles coeffin </title>
+        <link rel="stylesheet" href="style.css">
+        <script language="JavaScript">
+
+
+            var rep = new Array;  // 
+            var faite = new Array;  // 
+            var score = 0;  // 
+    
+            // 
+            rep[1] = "b";
+            rep[2] = "c";
+            rep[3] = "a";
+            rep[4] = "c";
+            
+    
+    
+            // 
+            //
+            //   
+            function test(question, reponse) {
+    
+                if (reponse != rep[question]) {
+                    if (!faite[question]) {  // 
+                        faite[question] = -1;  // 
+                        alert("Dommage!   C'était la ." + rep[question] + " ");
+                    }
+                    else {
+                        alert("Tu à déjà été répondue.");
+                    }
+                }
+                else {
+                    if (!faite[question]) {
+                        faite[question] = -1;
+                        score++; //
+                        alert("Parfait ! C'est la bonne réponse ! ");
+                    }
+                    else {
+                        alert("Tu à déjà été répondue.");
+                    }
+                }
+            }
+    
+            //
+    
+            function afficherLesResultats() {
+    
+                resultats = document.getElementById("resultats");
+                // 
+                // 
+                if (score == 4) { resultats.innerHTML = "<h1>Ton score est de : 4/4 </h1>" }
+                else if (score == 3) { resultats.innerHTML = "<h1>Ton score est de : 3/4 </h1>" }
+                else if (score == 2) { resultats.innerHTML = "<h1>Ton score est de : 2/4 </h1>" }
+                else if (score == 1) { resultats.innerHTML = "<h1>Ton score est de : 1/4 </h1>" }
+                else if (score == 0) { resultats.innerHTML = "<h1>Ton score est de : 0/4 </h1>" }
+    
+    
+                appreciation = document.getElementById("appreciation");
+                //
+                // 
+                if (score == 4) { appreciation.innerHTML = "<h2>Woulo, sans fautes!! Bien joué !</h2>" }
+                else if (score > 2 && score <= 4) { appreciation.innerHTML = "<h2>Pas mal.</h2>" }
+                else if (score >= 0 && score < 2) { appreciation.innerHTML = "<h2>lit l'histoire!</h2>" }
+    
+    
+                // 
+                faite = new Array;
+                score = 0;
+                document.quest.reset();
+            }
+    
+        </script>
+        <div class="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <img src="image3.jpg"id=logo alt="logo"/>
+                    <h1> Charles coeffin </h1>					
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <button type="button" onclick="changePage1()">Mots croisés</button>
+                            <script>
+                                    
+                                function changePage1() {
+                                    window.location.href = 'AZEMA/ENTRE MOTS CROISES.html';
+                                }
+                            </script>
+                        <li>
+                            <button type="button" onclick="changePage2()">Découverte du lycée</button>
+                            <script>
+                                    
+                                function changePage2() {
+                                    window.location.href = 'HUMBLOT/index.html';
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <section id=partie_une>
+                <div>
+                    <article>
+                        <h1>QUI EST CHARLE COEFFIN ?</h1>
+                        <p>
+                            Juste 100 ans après la naissance de Charles COEFFIN, le lycée qui porte son nom ouvre ses portes sur le site de TRIONCELLE à BAIE-MAHAULT.
+                            Charles COEFFIN est né en octobre 1899 à BOSREDON, commune de MORNE A L’EAU.
+                        </p>
+                        <p>
+                            D’abord instituteur, puis professeur dans une école de Commerce et d’Industrie en Métropole, il dirigea ensuite durant 26 ans cet établissement qui fut appelé successivement :
+                        </p>
+                        <p>
+                            École Pratique de Commerce et d’Industrie de 1939 à 1972,
+                            Collège Technique jusqu’en 1960, et enfin
+                            Lycée Technique dont il fut le premier Proviseur
+                            Initialement hébergé dans les locaux de l’actuel collège Carnot, le Lycée Technique s’installe, dans ses murs, à BAIMBRIDGE en Janvier 1965, où il restera jusqu’en Septembre 1998.
+                        </p>
+                        <p>
+                            C’est le 20 Décembre 1990, que sera donné au Lycée Technique de BAIMBRIDGE le nom de cet ardent défenseur de l’enseignement Technique en Guadeloupe. 
+                        </p>
+                </div>
+            </section>
+
+            <section id=partie_deux>
+                <div>
+                    <article>
+                        <h1>Ce que l'on trouve a Charles Coeffin</h1>
+                        <p>
+                            Le lycée dispose de plusieurs formations:
+                        </p>
+                        <p>
+                            D’abord le filiere lycéen de base:
+                        </p>
+                        <ul>
+                            <li>Bac Generale</li>
+                            <li>Bac Technologique</li>
+                            <li>Bac Professionnel</li>
+                        </ul>
+                        <p>
+                            Mais aussi les classes supérieurs:
+                        </p>
+                        <ul>
+                            <li>Prépa MPI</li>
+                            <li>Prépa MP2I</li>
+                            <li>Prépa PT</li>
+                            <li>Prépa PTSI</li>
+                            <li>Prépa TSI</li>
+                            <li>BTS</li>
+                        </ul>
+                </div>
+            </section>
+
+            
+            <section id=partie_trois>
+                <form name="quest">
+                    <article>
+                    <h1>QUIZZ CHARLES COEFFIN</h1>
+                    </br>
+    
+                    <div class=bloc_question> 
+                        <h2>1 ➜ En quelle année est né Charles COEFFIN ?</h2>
+                        <p>
+                            
+                            <br><input type="radio" name="1" value="a" onclick="test(1, this.value)">a. 1988
+                            <br><input type="radio" name="1" value="b" onclick="test(1, this.value)">b. 1899
+                            <br><input type="radio" name="1" value="c" onclick="test(1, this.value)">c. 1889
+                        </p>
+                    </div>
+                    </br></br> 
+    
+                    <div class=bloc_question>
+                        <h2>2 ➜ Ou?</h2>
+                        <p>
+                            <br><input type="radio" name="2" value="a" onclick="test(2, this.value)">a. BAIE-MAHAULT.
+
+                            <br><input type="radio" name="2" value="b" onclick="test(2, this.value)">b. POINT-A-PITRE.
+            
+                            <br><input type="radio" name="2" value="c" onclick="test(2, this.value)">c. MORNE A L’EAU.
+                        </p>
+                    </div>
+                    </br></br>
+    
+                    <div class=bloc_question>
+                        <h2>3 ➜ Quel filiaire sont disponible dans le lycee charles coeffin ? (hors étude superieur) </h2>
+                        <p>
+                            <br><input type="radio" name="3" value="a" onclick="test(3, this.value)">a. Professionnel, Generale et Technologique
+                            <br><input type="radio" name="3" value="b" onclick="test(3, this.value)">b. Generale et Technologique
+                            <br><input type="radio" name="3" value="c" onclick="test(3, this.value)">c. Professionnel
+                        </p>
+                    </div>
+                    </br></br>
+    
+                    <div class=bloc_question>
+                        <h2>4 ➜ Quel classe preparatoire n'est pas à Charles Coeffin ?</h2>
+                        <p>
+                            <br><input type="radio" name="4" value="a" onclick="test(4, this.value)">a. PTSI
+                            <br><input type="radio" name="4" value="b" onclick="test(4, this.value)">b. MP2I
+                            <br><input type="radio" name="4" value="c" onclick="test(4, this.value)">c. LSS
+                            
+                        </p>
+                    </div>
+                    </br></br>
+
+                    <p><input type="button" name="Resultats" value="Résultats" id="bouton_resultats"
+                            onclick="afficherLesResultats()"></p> 
+    
+                    <div id="resultats"></div> 
+                    <div id="appreciation"></div> 
+                    </br>
+                </form>
+            </section>
+    </body>
+</html>

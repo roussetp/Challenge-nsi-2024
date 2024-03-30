@@ -1,0 +1,32 @@
+body{
+    font-family: aleoregular, Georgia, 'Times New Roman', serif ;
+    background-image: url("imagefonddecran.jpg") ;
+    background-attachment: fixed ; 
+    text-align: center;
+}
+img {
+    border: 1px solid rgba(221, 221, 221, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 20%;
+  }
+#modeVie
+{
+    background-color: rgb(144, 43, 226);
+    width : 900px ;
+	margin : auto ;
+    box-shadow: 12px 12px 5px #594961 ;
+}
+
+p{
+    color:rgb(19, 29, 170);
+
+}
+
+h1{
+    color:rgb(224, 132, 19);
+}
+
+ul{
+    color:rgb(0, 0, 0);
+}

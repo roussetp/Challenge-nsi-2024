@@ -1,0 +1,228 @@
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+3/4 pts richesse du contenu HTML
+2/4 pts richesse du code CSS
+3/4 pts richesse du JavaScript
+0/1 pt site Web constitué et opérationnel
+15/20
+-->
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur l'Australie</title>
+    <style>
+     body {
+    background-color: #cce0ff; /* Couleur de l'océan */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #004d99; /* Bleu foncé pour le titre */
+}
+
+.question {
+    font-weight: bold;
+    color: #004d99; /* Bleu foncé pour les questions */
+}
+
+.options {
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff9933; /* Orange pour le bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc6600; /* Teinte plus foncée au survol */
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #004d99; /* Bleu foncé pour le score */
+}
+
+    </style>
+    </head>
+    <body>
+
+    <h1>Quiz sur l'Australie</h1>
+
+    <div class="question">
+      <p>1. Quel est le nom de la plus grande ville d'Australie ?</p>
+    </div>
+    <div class="options">
+      <input type="radio" name="q1" value="a"> Sydney<br>
+      <input type="radio" name="q1" value="b"> Melbourne<br>
+      <input type="radio" name="q1" value="c"> Brisbane<br>
+      <div id="feedback1"></div>
+    </div>
+
+    <div class="question">
+      <p>2. Quel est le nom du plus grand désert d'Australie ?</p>
+    </div>
+    <div class="options">
+      <input type="radio" name="q2" value="a"> Désert de Simpson<br>
+      <input type="radio" name="q2" value="b"> Désert de Gibson<br>
+      <input type="radio" name="q2" value="c"> Désert de Tanami<br>
+      <div id="feedback2"></div>
+    </div>
+
+    <div class="question">
+      <p>3. Quel animal est souvent associé à l'Australie ?</p>
+    </div>
+    <div class="options">
+      <input type="radio" name="q3" value="a"> Panda<br>
+      <input type="radio" name="q3" value="b"> Koala<br>
+      <input type="radio" name="q3" value="c"> Gorille<br>
+      <div id="feedback3"></div>
+    </div>
+
+<div class="question">
+  <p>4. Quel est le plus grand récif corallien du monde, situé au large de la côte nord-est de l'Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q4" value="a"> Le récif de la mer de Corail<br>
+  <input type="radio" name="q4" value="b"> La grande barrière de corail<br>
+  <input type="radio" name="q4" value="c"> Le récif de Ningaloo<br>
+  <div id="feedback4"></div>
+</div>
+
+<!-- Question 5 -->
+<div class="question">
+  <p>5. Quel est le nom de l'opéra emblématique situé à Sydney ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q5" value="a"> Opéra de Sydney<br>
+  <input type="radio" name="q5" value="b"> Opéra de Melbourne<br>
+  <input type="radio" name="q5" value="c"> Opéra de Brisbane<br>
+  <div id="feedback5"></div>
+</div>
+
+<!-- Question 6 -->
+<div class="question">
+  <p>6. Quel est le nom du plat traditionnel aborigène australien, composé de viande cuite sous terre ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q6" value="a"> Pudding<br>
+  <input type="radio" name="q6" value="b"> Damper<br>
+  <input type="radio" name="q6" value="c"> Pavlova<br>
+  <div id="feedback6"></div>
+</div>
+
+<!-- Question 7 -->
+<div class="question">
+  <p>7. Quelle est la devise nationale de l'Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q7" value="a"> "Advance Australia Fair"<br>
+  <input type="radio" name="q7" value="b"> "God Save the Queen"<br>
+  <input type="radio" name="q7" value="c"> "Waltzing Matilda"<br>
+  <div id="feedback7"></div>
+</div>
+
+<!-- Question 8 -->
+<div class="question">
+  <p>8. Quelle est la monnaie officielle de l'Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q8" value="a"> Dollar australien<br>
+  <input type="radio" name="q8" value="b"> Livre australienne<br>
+  <input type="radio" name="q8" value="c"> Euro<br>
+  <div id="feedback8"></div>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+  <p>9. Quelle est la plus grande île de l'Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q9" value="a"> Île Kangourou<br>
+  <input type="radio" name="q9" value="b"> Île Fraser<br>
+  <input type="radio" name="q9" value="c"> Tasmanie<br>
+  <div id="feedback9"></div>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+  <p>10. Quel est le nom de l'animal emblématique de l'Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q10" value="a"> Kangourou<br>
+  <input type="radio" name="q10" value="b"> Émeu<br>
+  <input type="radio" name="q10" value="c"> Koala<br>
+  <div id="feedback10"></div>
+</div>
+
+<!-- Question 11 -->
+<div class="question">
+  <p>11. Quelle est la superficie de l'Australie en kilomètres carrés (km²) ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q11" value="a"> Environ 5 millions km²<br>
+  <input type="radio" name="q11" value="b"> Environ 8 millions km²<br>
+  <input type="radio" name="q11" value="c"> Environ 10 millions km²<br>
+  <div id="feedback11"></div>
+</div>
+
+<!-- Question 12 -->
+<div class="question">
+  <p>12. Quel est le sport le plus populaire en Australie ?</p>
+</div>
+<div class="options">
+  <input type="radio" name="q12" value="a"> Cricket<br>
+  <input type="radio" name="q12" value="b"> Rugby<br>
+  <input type="radio" name="q12" value="c"> Football australien (AFL)<br>
+  <div id="feedback12"></div>
+</div>
+
+<button onclick="calculateScore()">Soumettre</button>
+<div id="score" style="display:none;"></div>
+
+<script>
+function calculateScore() {
+    var score = 0;
+    var totalQuestions = 12;
+    var answers = ['a', 'b', 'b', 'b', 'a', 'b', 'a', 'a', 'b', 'a', 'a', 'c']; // Réponses correctes pour chaque question
+
+    for (var i = 1; i <= 12; i++) {
+        var selectedAnswer = document.querySelector('input[name=q' + i + ']:checked');
+        var feedback = document.getElementById('feedback' + i);
+        if (selectedAnswer) {
+            if (selectedAnswer.value === answers[i - 1]) {
+                score++;
+                feedback.textContent = "Bonne réponse!";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Mauvaise réponse.";
+                feedback.style.color = "red";
+            }
+        } else {
+            feedback.textContent = "Veuillez sélectionner une réponse.";
+            feedback.style.color = "blue";
+        }
+    }
+
+    var scoreDisplay = document.getElementById('score');
+    scoreDisplay.style.display = 'block';
+    scoreDisplay.textContent = "Votre score est : " + score + " sur " + totalQuestions;
+}
+</script>
+</body>
+</html>
+

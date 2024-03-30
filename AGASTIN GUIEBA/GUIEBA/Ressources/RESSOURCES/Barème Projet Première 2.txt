@@ -1,0 +1,13 @@
+Barème production
+
+2 pts justesse code HTML / CSS / JavaScript
+2 pts soin apporté à la présentation code HTML / CSS / JavaScript
+2 pts commentaires du code notamment Javascript
+6 pts pertinence du contenu de la page Web
+
+3 pts richesse du contenu HTML
+2 pts richesse du code CSS
+3 pts richesse du JavaScript
+
++2 pts bonus si site Web constitué et opérationnel
+

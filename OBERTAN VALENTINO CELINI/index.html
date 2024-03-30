@@ -1,0 +1,85 @@
+<!--
+3/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+19/20 Très bien. Un petit soucis de lien et le son qui fonctionne maintenant
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Les Pyramides de Gizeh</title>
+        <link rel="shortcut icon" href="pyramide.png"/>
+        <audio autoplay loop>
+            <source src="aladdin.mp3" type="aladdin">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+    </head>
+    <body>
+        <figure>
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio controls src="aladdin.mp3"></audio>
+            <a href="aladdin.mp3"> Download audio </a>
+          </figure>
+          
+        <div class="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <img src="pypy.gif" id="Pygif">
+                    <h1>LES PYRAMIDES DE GIZEH</h1>
+            </header>
+            <section id="intro">
+                <nav>
+                    <h1>SOMMAIRE</h1>
+                    <ul>
+                        <li> <a href="OBERTAN/infospyramides.html">Histoire + Infos sur les pyramides</a></li>
+                        <li> <a href="VALENTINO/jeucarte.html">CARTAMIDE</a> </li>
+                        <li> <a href="quizz.html">QUIZAMIDE</a></li>
+                        </a> </li>
+                    </ul>
+                </nav>
+                <article> 
+                    <p1> Les pyramides de Gizeh sont des monuments incontournables d'Egypte,
+                        nous trouvions intéressant de vous éclairer sur ces magnifiques édifices
+                        datant de bien des années. En apprendre plus sur l'histoire, les causes et
+                        les bénéfices de leur construction. N'est-ce pas passionnant ? ^^ 
+                        L'ensemble des pyramides égyptiennes situées dans la nécropole de Gizeh sur le plateau de Gizeh,
+                        s'appelle aussi le "Complexe pyramidal de Gizeh".
+                        Fun fact : Ces pyramides sont classées dans le patrimoine mondial depuis 1979 ! Génial, non ?
+                    </p1>
+                </article>
+            </section>
+            <section id="message">
+                <nav>
+                    <p> BONNE LECTURE ! (N'hésitez pas à faire notre petit quiz !:)</p>
+                </nav>
+            </section>
+            <section id="button">
+            <button onclick="toggleBackground()">NUIT</button>
+            <script>
+                var currentImage = 1;
+
+                function toggleBackground() {
+                    var body = document.body;
+                    modeNuit = false
+                    if (currentImage === 1) {
+                        body.style.backgroundImage = "url('pyr_nuit.jpg')";
+                        document.querySelector('button').innerText = 'JOUR';
+                        currentImage = 2;
+                        body.classList.add('modeNuit');
+                        modeNuit = !modeNuit
+                    } else {
+                        body.style.backgroundImage = "url('background1.jpg')";
+                        document.querySelector('button').innerText = "NUIT";
+                        currentImage = 1;
+                        body.classList.remove('modeNuit');
+                    }
+                }
+            </script>
+            </section>
+        </div>
+    </body>
+</html>

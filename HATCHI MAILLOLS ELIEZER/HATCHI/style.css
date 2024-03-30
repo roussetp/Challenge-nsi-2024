@@ -1,0 +1,134 @@
+body{
+    background-image: url(mer.jpg);
+    background-size: auto;
+    width : 900px ;
+	margin : auto 
+}
+#nav{
+    text-align:center;
+}
+#souffriere
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#allée_du_manoir 
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#plage_st_anne
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#douche_st_francois
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#destrelande
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#bassin_bleu
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#plage_basse_terre
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#memorial_acte
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#maison_du_cacao
+{
+    display: flex ;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}
+#titre
+{
+    margin: 5% auto;
+}
+#INTRODUCTION
+{
+    display: flex ;
+    text-align: center;
+	justify-content: space-between ;
+    background-color: #71abf7 ;
+    opacity : 0.9 ;
+    border : 2px #7e7cdb solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #6481d1 ;
+    margin: 5% auto;
+    
+}

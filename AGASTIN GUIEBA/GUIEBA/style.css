@@ -1,0 +1,10 @@
+body{
+    background-image: url('istockphoto-514622028-612x612.jpg');
+    /* Répéter l'image sur l'ensemble de la page */
+    background-repeat: repeat;
+    /* Changer la taille de l'image en arrière-plan */
+    background-size: cover;
+    /* Centrer l'image */
+    background-position: center;
+    color: rgb(235, 8, 8); 
+}

@@ -1,0 +1,254 @@
+body
+{
+    font-family: aleoregular, Georgia, 'Times New Roman', serif ;
+    background-color: #9dac89;
+    background-attachment: fixed ;
+    background-size: cover;
+    color: white ; 
+}
+.bloc_page 
+{
+	width : 900px ;
+	margin : auto ;
+
+}
+header 
+{
+	display: flex ;
+	justify-content: space-between ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #000000 solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d;
+    margin : 20px ;
+    font-family: Georgia, 'Times New Roman', serif ;	
+    
+}
+#titre_principal
+{
+	display : flex
+}
+
+
+#gwada
+{
+	display: flex ;
+	flex-direction: row ;
+	width: 100px ;
+    height: 100px ;
+}
+#intro
+
+{
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #000000 solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d ;
+    margin : 20px ;
+    margin-top: 30px ;
+    font-size: 1.5em ;
+}
+#intro a
+{
+    font-size: 1em ;
+    color: #ffffff ;
+    text-decoration: underline ;
+}
+#intro2
+
+{
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #000000 solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d ;
+    margin : 20px ;
+    margin-top: 30px ;
+    font-size: 1.5em ;
+}
+#intro2 a
+{
+    font-size: 1em ;
+    color: #ffffff ;
+    text-decoration: underline ;
+}
+header li
+{
+    margin-right: 25px ;
+}
+
+header h1
+{
+	font-size : 2.5em ;
+	margin: 25px ;
+    color: white ;
+}
+nav a, h1
+{
+	 font-family: Georgia, 'Times New Roman', serif ;	 
+}
+header a
+{
+    font-size: 1.5em ;
+    color: #63a1e7 ;
+    text-decoration: underline ;
+}
+header a:hover
+{
+    color: #5bad54 ;
+    font-style : italic ;
+}
+#acceuil
+{
+	display : flex
+}
+#coeffin
+{
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #000000 solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d ;
+    margin : 20px ;
+    margin-top: 30px ;
+    font-size: 1.5em ;
+    width: 855px ;
+}
+.bouton_quizz a 
+{
+    display: block ;
+    text-align: center ;
+    padding: 20px ;
+    margin:auto ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #c48dd9 ;
+    border-radius: 3px ;
+    box-shadow: 3px 3px 1px #353d2d ;
+    color : black ;
+    text-decoration: none ;
+    width: 200px ;
+    font-size: 1.2em ;
+}
+
+.bouton_quizz a:hover 
+{
+    background-color: #cfd8b0 ;
+    border : 2px #0f0c1a ;
+    color : white ;
+}
+
+            /* Quizz */
+#introquizz
+
+{
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #000000 solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d ;
+    margin : 20px ;
+    margin-top: 30px ;
+    font-size: 1.5em ;
+}
+
+
+#quizz
+{
+    width : 800px ;
+    margin : auto ;
+    padding: 20px ;
+    background-color: #cfd8b0 ;
+    opacity : 0.9 ;
+    border : 2px #28205e solid ;
+    border-radius: 5px ;
+    box-shadow: 12px 12px 5px #353d2d ;
+    margin-top: 30px ;
+    text-align: center ;
+}
+
+
+/* Questions */
+
+
+.bloc_question
+{
+    background-color: #93997b ;
+    opacity : 0.9 ;
+    border : 5px  #000000 ;
+    border-radius: 25px ;
+    margin : 20px ;
+    padding: 10px ;
+    color : white ;
+    font-family: compagnonroman, Georgia, 'Times New Roman', serif ;
+}
+
+#quizz h2
+{
+    font-size: 1.2em ;
+}
+
+#quizz p
+{
+    font-size: 1.1em ;
+}
+
+
+/* Boutton des résultats */
+
+
+#bouton_resultats
+{
+    background-color: #93997b;
+    opacity : 0.9 ;
+    border : 2px  #c48dd9 ;
+    border-radius: 3px ;
+    box-shadow: 3px 3px 1px #353d2d ;
+    color : white ;
+    font-family: compagnonroman, Georgia, 'Times New Roman', serif ;
+    font-size: 1.1em ;
+    padding: 10px ;
+}
+
+#bouton_resultats:hover 
+{
+    background-color: #93997b ;
+    color: white ;
+}
+
+
+/* Bouton de retour à la page principale */
+
+
+.bouton_fin a 
+{
+    display: block ;
+    text-align: center ;
+    padding: 20px ;
+    margin:auto ;
+    background-color: #93997b;
+    border : 2px #ffffff ;
+    border-radius: 3px ;
+    box-shadow: 3px 3px 1px #353d2d ;
+    color : white ;
+    text-decoration: none ;
+    width: 200px ;
+    font-size: 0.9em ;
+}
+
+.bouton_fin a:hover 
+{
+    background-color: #0f0c1a ;
+    border : 2px #0f0c1a ;
+    color : white ;
+}

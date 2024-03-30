@@ -1,0 +1,19 @@
+
+body{
+    background-color: #9ddeff;
+    height:200vh;
+    width:200vw;
+    display:flex container;
+    align-items:flex-start;
+    justify-content:center;
+}
+.backg{
+    position:static;
+    height:100px;
+    width:500px;
+    border-radius:100%;
+    background-color:darkblue (50, 41, 228, 0.1);
+    transform:scale(0.7);
+    }
+
+  

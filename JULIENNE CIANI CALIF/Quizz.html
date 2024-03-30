@@ -1,0 +1,200 @@
+<!--CALIF-->
+
+<html>
+
+	<head> 
+		<meta charset="utf-8">
+        <title>LA GUADELOUPE/Quizz</title>
+        <link rel="stylesheet" href="QUIZZ.css"> 
+
+        <script language="JavaScript"> 
+        	
+            
+            var rep = new Array;  // 
+			var faite = new Array;  // 
+			var score = 0;  // 
+ 
+			// 
+			rep[1] = "a";
+			rep[2] = "d";
+			rep[3] = "d";
+			rep[4] = "c";
+			rep[5] = "a";
+			rep[6] = "b";
+
+ 
+// 
+//
+//   
+function test(question, reponse) {
+
+    if (reponse != rep[question]) {
+        if (!faite[question]) {  // 
+            faite[question] = -1;  // 
+            alert("Mauvaise reponse !   La reponse etait ." + rep[question] + " ");
+            }
+        else {
+            alert("Déja fait :)");
+            }           
+        }
+    else {
+        if (!faite[question]) {
+            faite[question] = -1; 
+            score++; //
+            alert("Superrrr ! Continue Ainsi ! ");
+            }
+        else { 
+            alert("Déja fait :)");
+        }
+        }
+}
+
+//
+
+function afficherLesResultats () 
+{
+
+	resultats=document.getElementById("resultats"); 
+	// 
+	// 
+		 if (score ==6){resultats.innerHTML="<h1>Ton score est de : 6/6 </h1>"}
+		else if (score ==5){resultats.innerHTML="<h1>Ton score est de : 5/6 </h1>"}
+		else if (score ==4){resultats.innerHTML="<h1>Ton score est de : 4/6 </h1>"}
+		else if (score ==3){resultats.innerHTML="<h1>Ton score est de : 3/6 </h1>"}
+		else if (score ==2){resultats.innerHTML="<h1>Ton score est de : 2/6 </h1>"}
+		else if (score ==1){resultats.innerHTML="<h1>Ton score est de : 1/6 </h1>"}
+		else if (score ==0){resultats.innerHTML="<h1>Ton score est de : 0/6 </h1>"}
+
+
+    appreciation=document.getElementById("appreciation");
+	//
+	// 
+   		if (score ==6) {appreciation.innerHTML="<h2>Tu es super fort !! tu es pret pour la Guadeloupe !</h2>"}
+		else if (score > 3 && score <= 5) {appreciation.innerHTML="<h2>EH EH ! tu as eu un bon resultat</h2>"}
+		else if (score >= 1 && score <3) {appreciation.innerHTML="<h2>Bof bof...Peut mieux faire</h2>"}
+		else if (score < 1) {appreciation.innerHTML="<h2>Oh oh , il te manques de la lecture</h2>"}
+
+
+	// 
+	faite = new Array;
+	score = 0;
+	document.quest.reset();
+}
+
+</script>
+	</head>
+
+    <body> 
+        <div class="bloc_page">
+
+        	
+
+			<header> 
+				<div id="titre_principal">
+					<img src="gp.gif"id=guadeloupe alt="guadeloupe"/>
+					<h1>QUIZZ SUR LA GUADELOUPE</h1>					
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="info gp.html">Son histoire</a></li>
+					</ul>
+				</div>
+			</header>
+
+			
+
+			<section id ="quizz"> 
+
+			<form name="quest">
+
+			<h1>Repondons a quelques questions</h1>
+			</br>
+
+			<!--  -->
+			<div class=bloc_question> <!-- -->
+				<h2>1- Les lamentin ont besoin d'une température d'au moins :</h2> <!--  -->
+				<p>
+				<!-- -->
+					<br><input type="radio" name="1" value="a" onclick="test(1, this.value)">a.20°C
+					<br><input type="radio" name="1" value="b" onclick="test(1, this.value)">b.10°C 
+					<br><input type="radio" name="1" value="c" onclick="test(1, this.value)">c.5°C
+					<br><input type="radio" name="1" value="d" onclick="test(1, this.value)">d.40°C
+				</p>
+			</div>
+			</br></br> <!--  -->
+
+			<div class=bloc_question>
+				<h2>2- Comment est appelé le raton laveur en Guadeloupe ?</h2>
+				<p>
+					<br><input type="radio" name="2" value="a" onclick="test(2, this.value)">a.Rat des iles 
+					<br><input type="radio" name="2" value="b" onclick="test(2, this.value)">b.Raton laveur
+					<br><input type="radio" name="2" value="c" onclick="test(2, this.value)">c.Loup
+					<br><input type="radio" name="2" value="d" onclick="test(2, this.value)">d.Racoon
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>3- Lors de quelle fête est célébrée le crabe ?</h2>
+				<p>
+					<br><input type="radio" name="3" value="a" onclick="test(3, this.value)">a.Noel
+					<br><input type="radio" name="3" value="b" onclick="test(3, this.value)">b.La toussaint
+					<br><input type="radio" name="3" value="c" onclick="test(3, this.value)">c.Le carnaval
+					<br><input type="radio" name="3" value="d" onclick="test(3, this.value)">d.Paques
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>4- Ou pousse les fruits a pain ?</h2>
+				<p>
+					<br><input type="radio" name="4" value="a" onclick="test(4, this.value)">a.Dans les cocotiers 
+					<br><input type="radio" name="4" value="b" onclick="test(4, this.value)">b.Dans la terre
+					<br><input type="radio" name="4" value="c" onclick="test(4, this.value)">c.Dans un arbre a pain 
+					<br><input type="radio" name="4" value="d" onclick="test(4, this.value)">d. Dans un fruitier
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>5-Coupé , quelle forme a le carambole?</h2>
+				<p>
+					<br><input type="radio" name="5" value="a" onclick="test(5, this.value)">a.Etoile
+					<br><input type="radio" name="5" value="b" onclick="test(5, this.value)">b.Rond
+					<br><input type="radio" name="5" value="c" onclick="test(5, this.value)">c.Triangle
+					<br><input type="radio" name="5" value="d" onclick="test(5, this.value)">d.Coeur
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>6- De quel pays est originaire L'arbre du voyageur ? </h2>
+				<p>
+					<br><input type="radio" name="6" value="a" onclick="test(6, this.value)">a.Guadeloupe
+					<br><input type="radio" name="6" value="b" onclick="test(6, this.value)">b.Madagascar
+					<br><input type="radio" name="6" value="c" onclick="test(6, this.value)">c.Martinique
+					<br><input type="radio" name="6" value="d" onclick="test(6, this.value)">d.Cuba
+				</p>
+			</div>
+			</br></br>
+
+
+			<p><input type="button" name="Resultats" value="Résultats" id="bouton_resultats" onclick="afficherLesResultats()"></p> <!---->
+
+			<div id="resultats"></div> <!--  -->
+			<div id="appreciation"></div> <!---->
+			</br>
+			</form>
+
+			<div class="bouton_fin"> <!--  -->
+  				<p>
+   					<a href="index.html">Retour à la page principale</a>
+ 				</p>
+			</div>
+		</section>
+
+		</div>
+    </body>
+</html>
+

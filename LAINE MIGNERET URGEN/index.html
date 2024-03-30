@@ -1,0 +1,228 @@
+<!--
+3/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+0/1 pts site Web constitué et opérationnel
+18/20 Bien mais J'ai des doutes sur votre appropriation du code JavaScript
+-->
+<!--LAINE-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Londres</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #329ce2;
+            color: rgb(17, 16, 16);
+        }
+
+        header {
+            text-align: center;
+            background-color: #f9fbfd;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .adjustable-image {
+            max-width: 300px; /* Largeur maximale pour les images ajustables */
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .history {
+            margin-top: 20px;
+        }
+
+        .history img {
+            cursor: pointer;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        h1, h2, h3 {
+            color: #3498db;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            cursor: pointer;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Londres</h1>
+</header>
+
+<section>
+    <h2>Introduction</h2>
+    <p>London is the capital of England and the United Kingdom. An immense metropolis located at the north-west end of the European megalopolis of which it constitutes an essential link, as well as on the major axis of the ridge of the same name. Thus, it is at the heart of the most developed and richest region in Europe. It is also a center of international momentum perfectly integrated into the phenomenon of globalization.</p>
+</section>
+
+<section>
+    <h2>London</h2>
+    <p>London is a vibrant and diverse city located in the United Kingdom, renowned for its rich history, cultural significance, and bustling atmosphere. Here's a description of London in English:
+
+        London, the capital city of the United Kingdom, is a melting pot of cultures, offering a dynamic blend of old-world charm and modern sophistication. Steeped in history dating back to Roman times, London boasts iconic landmarks such as the Tower of London, Buckingham Palace, and the Houses of Parliament, which stand as testaments to its illustrious past.
+        
+        The city's diverse neighborhoods each possess their own distinct character, from the trendy streets of Shoreditch to the elegant squares of Kensington. Visitors can explore world-class museums like the British Museum and Tate Modern, or wander through bustling markets like Camden Market and Borough Market, sampling an array of international cuisines along the way.
+        
+        London's vibrant arts scene is evident in its numerous theaters, galleries, and music venues, where visitors can catch everything from West End musicals to underground gigs. The city also offers lush green spaces such as Hyde Park and Regent's Park, providing a welcome escape from the urban hustle and bustle.
+        
+        Transportation in London is efficient and extensive, with the iconic red double-decker buses and the famous London Underground connecting every corner of the city. Whether you're strolling along the banks of the River Thames, admiring the skyline from atop the London Eye, or enjoying a pint in a traditional pub, London never fails to captivate with its energy and charm..</p>
+    <img id="london" src="Londonj.jpg" alt="Tower of London" class="adjustable-image">
+</section>
+
+<section>
+    <h2>Culture</h2>
+    <p>Experience the vibrant culture of London through its museums, theaters, and diverse neighborhoods.</p>
+    <img src="image3.jfif" alt="British Museum" class="adjustable-image">
+    <img src="image2.jfif" alt="West End Theatres" class="adjustable-image">
+    <img src="image1.jfif" alt="Camden Market" class="adjustable-image">
+    <img src="images.jfif" alt="landmarkImage" class="adjustable-image">
+    
+
+    <h3>Quiz sur les monuments historiques de Londres</h3>
+    <form id="landmarkQuizForm">
+        <label for="question5">Quelle est la hauteur du Big Ben?</label>
+        <input type="number" id="question5" name="question5" placeholder="Votre réponse">
+
+        <input type="button" value="Soumettre" onclick="checkLandmarkQuiz()">
+    </form>
+    <p id="landmarkQuizResult"></p>
+</section>
+
+<section class="history">
+    <h2>History of London</h2>
+    <p>London's history is rich and fascinating, dating back to Roman times. Founded by the Romans around 50 AD, London was then known as Londinium. It quickly became a vital commercial and administrative center for the Roman Empire, with roads connecting the city to other parts of Great Britain.
+
+        Over the following centuries, London experienced ups and downs, including the Anglo-Saxon invasion in the 5th century, the Norman Conquest in 1066, and the Black Death in the 14th century. However, it always remained an important center of trade and power.
+        
+        In the 16th and 17th centuries, London became one of Europe's most significant cities, thriving on global trade and becoming the heart of the English Renaissance. The city also witnessed major events such as the Great Fire of 1666, which devastated much of the city, leading to its subsequent reconstruction.
+        
+        During the Victorian era, London became the center of the British Empire, with rapid urban expansion and the construction of many iconic landmarks such as Tower Bridge and the Crystal Palace. The city also served as the birthplace of the Industrial Revolution, with significant advancements in areas such as transportation, technology, and engineering.
+        
+        In the 20th century, London survived two world wars, enduring significant damage during the bombings of World War II. After the war, the city was rebuilt and continued to thrive as a global financial, cultural, and tourist hub.
+        
+        Today, London remains one of the world's most dynamic and diverse cities, with a cosmopolitan population, a thriving arts scene, renowned institutions, and ongoing global influence. Its captivating history is reflected in its iconic landmarks and eclectic neighborhoods, making London a must-visit destination for travelers worldwide.</p>
+    <img id="historyImage1" src="history1.jpg" alt="Histoire de Londres 1" onclick="showDetails('Détails pour l\'image 1')" class="adjustable-image">
+    <img id="historyImage2" src="history2.jpg" alt="Histoire de Londres 2" onclick="showDetails('Détails pour l\'image 2')" class="adjustable-image">
+
+    <h3>London History Quiz</h3>
+    <form id="historyQuizForm">
+        <label for="question3">What year was the Great Fire of London?</label>
+        <input type="number" id="question3" name="question3" placeholder="Votre réponse">
+
+        <label for="question4">Who was the British monarch during World War II?</label>
+        <select id="question4" name="question4">
+            <option value="none">Sélectionnez une réponse</option>
+            <option value="george_vi">George VI</option>
+            <option value="elizabeth_ii">Elizabeth II</option>
+            <option value="victoria">Victoria</option>
+        </select>
+
+        <input type="button" value="Soumettre" onclick="checkHistoryQuiz()">
+    </form>
+    <p id="historyQuizResult"></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 London Tourism</p>
+</footer>
+
+<script>
+    function showDetails(details) {
+        alert(details);
+    }
+
+    function checkLandmarkQuiz() {
+        var answer5 = document.getElementById("question5").value;
+        var landmarkQuizResult = document.getElementById("landmarkQuizResult");
+
+        // Vérifiez la réponse et affichez le résultat
+        if (answer5 === "96") {
+            landmarkQuizResult.textContent = "Félicitations! Vous avez bien répondu.";
+        } else {
+            landmarkQuizResult.textContent = "Désolé, ce n'est pas la bonne réponse. Veuillez réessayer.";
+        }
+    }
+
+    function checkHistoryQuiz() {
+        var answer3 = document.getElementById("question3").value;
+        var answer4 = document.getElementById("question4").value;
+        var historyQuizResult = document.getElementById("historyQuizResult");
+
+        // Vérifiez les réponses et affichez le résultat
+        if (answer3 === "1666" && answer4 === "george_vi") {
+            historyQuizResult.textContent = "Félicitations !";
+        } else {
+            historyQuizResult.textContent = "Désolé, ce n'est pas la bonne réponse. Veuillez réessayer.";
+        }
+    }
+</script>

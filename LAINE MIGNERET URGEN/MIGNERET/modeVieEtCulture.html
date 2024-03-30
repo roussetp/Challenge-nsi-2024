@@ -1,0 +1,111 @@
+﻿<!--
+3/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+3/4 pts richesse du code CSS
+3/4 pts richesse du JavaScript
+0/1 pts site Web constitué et opérationnel
+16/20 Des erreurs dans le code
+-->
+
+<html>
+    <head>
+        <title>LONDRES</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>way of life </h1>
+        <ul>
+            <li> we can see in this image first the royal family</li>
+        </ul>
+        <img src="image famille royale.jpg" title=""/>    
+        <p>the British royal family brings together
+             the people related to the British monarchy </p>    
+        <p> learning the english language </p>
+        <p><img src="image.jpg" alt="image"/></p>
+    
+        <p>people who come to settle in london to develop a 
+            new more pleasant lifestyle because the
+             English are different from other countries </p>
+    
+        <p><img src="imagewestend.jpg" alt=""></p>
+
+
+        
+        <p>there are several cultures in London
+            to discover as well as to visit as
+             the Cradle of rock is the city that belongs to
+             eternity to the Rolling Stones. Finally, London is also a temple
+             for musical comedies, particularly in the West End</p>
+        
+
+
+        <p> it is its duration that is judged
+            the success of an English musical</p>
+
+            <meta charset="UTF-8">
+            <title>Quiz sur Londres</title>
+
+            <h1>Quiz on London</h1>
+            <section>
+            <form> Quiz en 2 questions
+                <h2>Question 1: What is the capital of the United Kingdom?</h2>
+                <p>
+                    <input type="radio" name="q1" value="a"> Paris
+                    <input type="radio" name="q1" value="b"> Berlin
+                    <input type="radio" name="q1" value="c"> Londres
+                </p>
+                <h2>Question 2: on which river is London built?</h2>
+                <p>
+                    <input type="radio" name="q2" value="a"> Rhin
+                    <input type="radio" name="q2" value="b"> Tamise
+                    <input type="radio" name="q2" value="c"> Seine
+                </p>
+                <p>
+                    <input type="button" value="Vérifier les reponses" onclick="checkAnswers()">have a good stay if you want to go to london
+                </p>
+            </form> 
+            </section>
+    </body>
+
+    <script>
+                // créer un nouvel objet SpeechSyntheseisUtterance
+                let message = new SpeechSynthesisUtterance();
+                message.pitch=1; // de 0 à 2 hauteur
+                message.rate= 1; // de 0,5 à 2 vitesse
+                message.volume=1; // de 0 à 1 volume
+                // Définir le texte à prononcer
+                message.text = "Merci ! davoir regarder ma page web et j'en suis ravis bonne continuation.";
+                speechSynthesis.speak(message);
+                // utiliser la métode speechSyntheseis.speak() pour prononcer le texte
+    
+                function checkAnswers()  {
+                    // Recupérer les reponses sélectionnées
+                    message.text = "Merci ! davoir regarder ma page web et j'en suis ravis bon"
+                    speechSynthesis.speak(message);
+                    let q1Answer = document.querySelector('input[name="q1"]:checked');
+                    let q2Answer = document.querySelector('input[name="q2"]:checked');
+
+                    // Vérifiez les réponses
+                    if (q1Answer && q2Answer) {
+                         if (q1Answer.value === 'c' && q2Answer.value ==='b')  {
+                             alert('Félicitation! Vous avez toutes les bonnes réponses.');
+                         } else {
+                            alert('Veuillez répondre a toutes les questions.');
+
+                         }
+                    } else { 
+                        alert('Veuillez répondre a toutes les questions.');
+                    }
+                }
+   
+
+
+
+ 
+ 
+ 
+    </script>
+</html>
+
+    

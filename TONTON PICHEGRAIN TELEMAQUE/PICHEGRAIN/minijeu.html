@@ -1,0 +1,85 @@
+
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+3/4 pts richesse du contenu HTML
+1/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+0/1 pt site Web constitué et opérationnel
+15/20 C'est original ! Manque du CSS. 
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devine la destination - Australie</title>
+<style>
+    #map {
+        width: 800px;
+        height: 600px;
+        background-image: url('australia-map.jpg');
+        background-size: cover;
+        position: relative;
+    }
+    .guess {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+    <h1>Devine la destination - Australie</h1>
+    <script>
+        var destinations = {
+            "Sydney": { x: 700, y: 500 },
+            "Melbourne": { x: 600, y: 570 },
+            "Brisbane": { x: 750, y: 350 },
+            "Alice Springs": { x: 420, y: 300 },
+            "Parc national de karjini": { x: 100, y: 280 },
+            "Wave Rock": { x: 150, y: 450 },
+        };
+
+        var destination = prompt("Bienvenue ! Choisissez une destination en Australie parmi les suivantes : " + Object.keys(destinations).join(", ") + " :");
+
+        if (!destination || !destinations[destination]) {
+            alert("Vous devez entrer une destination valide pour commencer le jeu.");
+            window.location.reload();
+        }
+    </script>
+    <p>Cliquez sur la carte où vous pensez que se trouve la destination !</p>
+    <div id="map">
+        <div id="guess" class="guess"></div>
+    </div>
+    <p id="result"></p>
+
+<script>
+    const map = document.getElementById('map');
+    const guessDiv = document.getElementById('guess');
+    const resultParagraph = document.getElementById('result');
+
+    const correctX = destinations[destination].x;
+    const correctY = destinations[destination].y;
+
+    map.addEventListener('click', function(event) {
+        const x = event.offsetX;
+        const y = event.offsetY;
+
+        guessDiv.style.left = x - 10 + 'px';
+        guessDiv.style.top = y - 10 + 'px';
+
+        const distance = Math.sqrt(Math.pow(x - correctX, 2) + Math.pow(y - correctY, 2));
+
+        if (distance < 20) {
+            resultParagraph.textContent = 'Félicitations ! Vous avez trouvé ' + destination + ' !';
+        } else {
+            resultParagraph.textContent = 'Essaie encore. Vous êtes à ' + Math.round(distance) + ' pixels de ' + destination + '. Il reste ' + Math.round(20 - distance) + ' pixels.';
+        }
+    });
+</script>
+</body>
+</html>
+

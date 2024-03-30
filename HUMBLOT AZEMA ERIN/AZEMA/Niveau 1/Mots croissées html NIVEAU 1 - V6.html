@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mots Croisés</title>
+  <style>
+    body{
+      background-color:#004262;
+    
+    }
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 50px;
+      height: 40px;
+      border: 0px solid white;
+      text-align: center;
+    }
+
+    .case {
+      font-weight: bold;
+      border: 2px solid rgb(255, 255, 255);
+      background: #186891;
+    }
+    .single-letter-input {
+            width: 20px; /* Ajustez la largeur souhaitée */
+    }
+
+    h1 {
+      text-align: center;
+      font-family:comic sans MS;
+      color:#bbd6e4;
+      font-size: 40px;
+    }
+    h2 {
+      color:#7c8386;
+      font-size: 30px;
+    }
+    h3{
+      color:#bbd6e4;
+    }
+    .centrer{
+      width: 30%;
+      margin: auto;
+      text-align: center;
+    }
+    div{
+      color:#f9fbfc;
+    }
+
+    </style>
+</head>
+<body>
+  <section class="centrer">
+    <h1>Mots Croisés</h1>
+    <h2>NIVEAU 1</h2>
+    <table id="grille">
+      <tr> <!--Ligne 1-->
+        <td></td> <!--Case 1 de la ligne 1-->
+        <td></td>
+        <td></td>
+        <td><h3>3</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+   
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><h3>1</h3></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td>
+      <tr>
+        <td><h3>4</h3></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td></td>
+      <tr>
+        <td><h3>2</h3></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td class="case" onclick="editCell(this)"></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </section>
+  </table>
+
+  <div id="definition ">
+    <h4>Definition :</h4>
+      <p id="definition1">1.Raccourci de lycee polyvalent ? </p>
+      <p id="definition2">2.La filiere la plus presente au lycee ? </p>
+      <p id="definition3">3.le nom du lycée ?  </p>
+      <p id="definition1">4.A quoi sert les etudes ? </p>
+  </div>
+</body>
+<script>
+  function comparerTableaux(tableau1, tableau2) {
+      if (tableau1.length !== tableau2.length) {
+          return false;
+      }
+      for (var i = 0; i < tableau1.length; i++) {
+        if (tableau1[i].length !== tableau2[i].length) {
+            return false;
+        }
+        for (var j = 0; j < tableau1[i].length; j++) {
+            if (tableau1[i][j] !== tableau2[i][j]) {
+                return false;
+            }
+        }
+      }
+      return true;
+  }
+  function editCell(cell) {
+    // Créer un champ d'entrée de texte
+    var input = document.createElement("input");
+    input.type = "text";
+    input.maxLength = 1; // Limiter la saisie à une seule lettre
+    input.className = "single-letter-input "; // Ajouter une classe pour le style
+
+    // Récupérer le contenu actuel de la cellule
+    var currentContent = cell.innerHTML.trim();
+
+    // Définir la valeur du champ d'entrée de texte comme le contenu actuel de la cellule
+    input.value = currentContent;
+
+    // Ajouter le champ d'entrée de texte à la cellule
+    cell.innerHTML = "";
+    cell.appendChild(input);
+
+    // Mettre le focus sur le champ d'entrée de texte
+    input.focus();
+    // Ajouter un gestionnaire d'événements pour détecter la fin de l'édition
+    input.addEventListener("blur", function () {
+        // Valider et mettre à jour le contenu de la cellule avec la valeur du champ d'entrée de texte (en majuscules)
+        var newValue = input.value.toUpperCase();
+        cell.innerHTML = newValue;
+        var grilleCompletee = recupererValeursTableau(); // récupère les valeurs du tableau
+        //console.log(grilleCompletee); // affiche dans la console
+
+        var grilleSolution = [
+                ['', '', 'C', '', '', '', '', ''],
+                ['L', 'P', 'O', '', '', '', '', ''],
+                ['', '', '', 'E', '', '', '', ''],
+                ['', '', '', 'F', '', '', '', ''],
+                ['', 'I', 'N', 'F', 'O', 'R', 'M', 'E'],
+                ['', '', '', 'I', '', '', '', '']
+                ['', 'G', 'E', 'N', 'E', 'R', 'A', 'L']
+                                    ];
+        //alert(grille)
+        //alert(grilleCompletee)
+        if (comparerTableaux(grilleSolution, grilleCompletee)) {
+          alert("Trouvé");
+        }
+    });
+  }
+
+      // Fonction pour récupérer les valeurs des cellules
+      function recupererValeursTableau() {
+        // Récupérer le tableau par son identifiant
+        var tableau = document.getElementById("grille");
+
+        // Initialiser un tableau pour stocker les valeurs
+        var valeurs = [];
+
+        // Parcourir les lignes du tableau
+        for (var i = 0; i < tableau.rows.length; i++) {
+            // Initialiser un tableau pour stocker les valeurs de la ligne actuelle
+            var valeursLigne = [];
+
+            // Parcourir les cellules de la ligne actuelle
+            for (var j = 0; j < tableau.rows[i].cells.length; j++) {
+                // Ajouter la valeur de la cellule au tableau
+                valeursLigne.push(tableau.rows[i].cells[j].innerHTML);
+            }
+
+            // Ajouter le tableau de valeurs de la ligne au tableau principal
+            valeurs.push(valeursLigne);
+        }
+
+        return valeurs;
+    }
+
+    // Appeler la fonction et récupérer les valeurs
+    //var valeursDuTableau = recupererValeursTableau();
+
+    // Afficher les valeurs dans la console
+    //console.log(valeursDuTableau);
+</script>
+</html>

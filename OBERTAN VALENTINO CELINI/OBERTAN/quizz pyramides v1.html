@@ -1,0 +1,168 @@
+<html>
+
+	<head> 
+		<meta charset="utf-8">
+        <title>Quizz PYRAMIDES</title>
+        <link rel="stylesheet" href="style.css"> 
+
+        <script language="JavaScript"> 
+
+			
+			var rep = new Array;  // 
+			var faite = new Array;  // 
+			var score = 0;  // 
+ 
+			// 
+			rep[1] = "a";
+			rep[2] = "c";
+			rep[3] = "a";
+			
+
+ 
+// 
+//
+//   
+function test(question, reponse) {
+
+    if (reponse != rep[question]) {
+        if (!faite[question]) {  // 
+            faite[question] = -1;  // 
+            alert("Raté !   C'était la ." + rep[question] + " ");
+            }
+        else {
+            alert("Cette question à déjà été répondue.");
+            }           
+        }
+    else {
+        if (!faite[question]) {
+            faite[question] = -1; 
+            score++; //
+            alert("Bien joué ! C'est la bonne réponse ! ");
+            }
+        else { 
+            alert("Cette question à déjà été répondue.");
+            }
+        }
+}
+
+//
+
+function afficherLesResultats () 
+{
+
+	resultats=document.getElementById("resultats"); 
+	// 
+	// 
+		if (score== 3 ){resultats.innerHTML="<h1>Ton score est de : 3/3 </h1>"}
+		else if (score ==3){resultats.innerHTML="<h1>Ton score est de : 3/3 </h1>"}
+		else if (score ==2){resultats.innerHTML="<h1>Ton score est de : 2/3 </h1>"}
+		else if (score ==1){resultats.innerHTML="<h1>Ton score est de : 1/3 </h1>"}
+		else if (score ==0){resultats.innerHTML="<h1>Ton score est de : 0/3 </h1>"}
+
+
+    appreciation=document.getElementById("appreciation");
+	//
+	// 
+   		if (score ==3) {appreciation.innerHTML="<h2>Un score parfait !! Bien joué !</h2>"}
+		else if (score > 1 && score <= 2) {appreciation.innerHTML="<h2>Bon score ! Pas loin de la perfection...</h2>"}
+		else if (score >= 1 && score <0) {appreciation.innerHTML="<h2>Mouais...Peut mieux faire</h2>"}
+		else if (score < 0) {appreciation.innerHTML="<h2>Oualala, il faudrait peut-être penser à relire l'histoire :)</h2>"}
+
+
+	// 
+	faite = new Array;
+	score = 0;
+	document.quest.reset();
+}
+
+</script>
+	</head>
+
+    <body> 
+        <div class="bloc_page">
+
+        	
+
+			<header> 
+				<div id="titre_principal">
+					<h1> Info Pyramides </h1>					
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="infospyramides v1.html">Son histoire</a></li>
+						<li><a href="quizz pyramides v1.html">Quizz</a></li>
+					</ul>
+				</div>
+			</header>
+
+			
+
+			<section id ="quizz"> 
+
+			<form name="quest">
+
+			<h1>Faissons un petit quizz pour voir si vous avez bien tout suivi :)</h1>
+			</br>
+
+			<!--  -->
+			<div class=bloc_question> <!-- -->
+				<h2>1 ➜ Comment s'appelle la plus grande pyramide ?</h2> <!--  -->
+				<p>
+				<!-- -->
+					<br><input type="radio" name="1" value="a" onclick="test(1, this.value)">a.Khéops
+					<br><input type="radio" name="1" value="b" onclick="test(1, this.value)">b.Mykérinos
+					<br><input type="radio" name="1" value="c" onclick="test(1, this.value)">c.Guizeh
+					<br><input type="radio" name="1" value="d" onclick="test(1, this.value)">d.Shinpx
+				</p>
+			</div>
+			</br></br> <!--  -->
+
+			<div class=bloc_question>
+				<h2>2 ➜ A quoi ressemble le Shinpx ?</h2>
+				<p>
+					<br><input type="radio" name="2" value="a" onclick="test(2, this.value)">a.Un tigre 
+					<br><input type="radio" name="2" value="b" onclick="test(2, this.value)">b.Un ours
+					<br><input type="radio" name="2" value="c" onclick="test(2, this.value)">c.Un lion
+					<br><input type="radio" name="2" value="d" onclick="test(2, this.value)">d.Un phararon 
+				</p>
+			</div>
+			</br></br>
+
+			<div class=bloc_question>
+				<h2>3 ➜ Par quelle phararon a été construite la pyramide de Mykhérinos  ?</h2>
+				<p>
+					<br><input type="radio" name="3" value="a" onclick="test(3, this.value)">a.Le fils de Khéops
+					<br><input type="radio" name="3" value="b" onclick="test(3, this.value)">b.Par Khéops
+					<br><input type="radio" name="3" value="c" onclick="test(3, this.value)">c.Par Mykérions
+					<br><input type="radio" name="3" value="d" onclick="test(3, this.value)">d.Par le Sphinx
+				</p>
+			</div>
+			</br></br>
+
+			
+
+			<p><input type="button" name="Resultats" value="Résultats" id="bouton_resultats" onclick="afficherLesResultats()"></p> <!---->
+
+			<div id="resultats"></div> <!--  -->
+			<div id="appreciation"></div> <!---->
+			</br>
+			</form>
+
+			<div class="bouton_fin"> <!--  -->
+  				<p>
+   					<a href="infospyramides v1.html">Retour à la page principale</a>
+ 				</p>
+			</div>
+		</section>
+
+		<!--  -->
+
+		<footer> <!--  -->
+			
+		</footer>
+
+		</div>
+    </body>
+</html>
+

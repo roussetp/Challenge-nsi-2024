@@ -1,0 +1,81 @@
+body
+{
+    color: rgb(255, 255, 255);
+    background-image: url("fond.jpg");
+}
+#gif
+{
+    justify-content: center;
+    background-color: #5fa04c ;
+    opacity : 1 ;
+    border : 2px #418812 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+
+}
+
+#accueil
+{
+    
+    /*display: flex ;*/
+    justify-content: center;
+    background-color: #8cdb74 ;
+    opacity : 1 ;
+    border : 2px #c9fca7 solid ;
+    border-radius: 5px ;
+    
+    width : 900px ;
+	margin : auto ;
+
+}
+#trad
+{
+    justify-content: center;
+    background-color: #5fa04c ;
+    opacity : 1 ;
+    border : 2px #418812 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+    
+
+}
+#le_carnaval
+{
+    justify-content: center;
+    background-color: #8cdb74 ;
+    opacity : 1 ;
+    border : 2px #c9fca7 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+}
+#cuisine
+{
+    justify-content: center;
+    background-color: #5fa04c ;
+    opacity : 1 ;
+    border : 2px #418812 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 900px ;
+	margin : 2% auto ;
+    
+}
+#suite
+{
+    justify-content: center;
+    background-color: #88e06d ;
+    opacity : 1 ;
+    border : 2px #418812 solid ;
+    border-radius: 5px ;
+    text-align: center;
+    width : 500px ;
+	margin : 2% auto ; 
+    font-family: 'Cambria';
+}
+

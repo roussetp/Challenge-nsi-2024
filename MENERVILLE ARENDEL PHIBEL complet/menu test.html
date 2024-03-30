@@ -1,0 +1,102 @@
+<html>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<button id="button" onclick="myFunction(Text)">MENU</button>
+<div id="myDIV">
+    <ul><li><div><a href = "Index%201.html" target = "" > Acceuil </a></div><div><a href = "Guide.html" target = "" > Guide </a> </div><div><a href = "" target = "" > Vie du lycée </a></div><div><a href = "" target = "" > Jeu interactif </a> </div><div><a href = "" target = "" > Quizz </a> </div><div><a href = "" target = "" > FAQ </a> </div><div> <a href = "" target = "" > Annexes </a></div></li></ul>
+
+</div>
+
+
+
+<script>
+var x = document.getElementById("myDIV")
+var nommenu = document.getElementById("button")
+x.style.display = "none";
+function myFunction(e) {
+  ;
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    } 
+    else {
+    x.style.display = "none";
+    }
+}
+</script>
+                <style>
+
+                    
+                    ul {
+                position: relative;
+                }
+                ul li {
+                list-style: none;
+                text-align: center;
+                }
+                ul li a {
+                color: #333;
+                text-decoration: none;
+                font-size: 3em;
+                padding: 5px 20px;
+                display: inline-flex;
+                font-weight: 700;
+                transition: 0.5s;
+                }
+                ul:hover div a {
+                color: #0002;
+                }
+                ul div:hover a {
+                color: #000;
+                background: transparent;
+                }
+                ul div a:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5em;
+                color: rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                z-index: -1;
+                opacity: 0;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 500px;
+                transition: letter-spacing 0.5s, left 0.5s;
+                }
+                ul div a:hover:before {
+                content: attr(data-text);
+                opacity: 1;
+                left: 50%;
+                letter-spacing: 10px;
+                width: 1800px;
+                height: 1800px;
+                }
+                ul div:nth-child(6n + 1) a:before {
+                background: #0470fe;
+                }
+                ul div:nth-child(6n + 2) a:before {
+                background: #ff7675;
+                }
+                ul div:nth-child(6n + 3) a:before {
+                background: #1582fe;
+                }
+                ul div:nth-child(6n + 4) a:before {
+                background: #a29bfe;
+                }
+                ul div:nth-child(6n + 5) a:before {
+                background: #fd79a8;
+                }
+                ul div:nth-child(6n + 6) a:before {
+                background: #ffeaa7;
+                }
+                </style>
+    </body>
+</html>

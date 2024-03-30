@@ -1,0 +1,293 @@
+<!--
+3/4 pts Autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+2/4 pts richesse du contenu HTML
+1/4 pts richesse du code CSS
+1/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+11/20 Un peu léger. Mot croisé inachevé
+-->
+
+
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <title>Chasse au Papillon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+                                    <center><h1>La Gastronomie en Guadeloupe ! </h1></center>  
+        <p><a href="../index.html">Accueil</a></p>
+        <p> La guadeloupe est notre Grand Papillon, elle regorge de belles plages de restaurant ou l'on peut déguster de délicieux plats
+          traditionel tel que:
+        <ol>
+            <li>-Le Riz harricot rouge</li>
+            <li>-La Langouste</li>
+            <li>-Le Colombo </li>
+            <li>-Le Bébélé</li>
+            <li>-Le Boudin Créole</li>
+            <li>-Le court-bouillon de poisson</li>
+            <li>-Le matété de crabe</li>
+            <li>-Les casaves</li>
+            <li>-Les dombrés ouassous</li>
+            <li>-Les bokits et plein d'autres...</li>
+        </ol>
+        
+          <u>
+         <br> La cuisine créole prône à elle seule le métissage. Le mariage des saveurs africaines, des parfums de l’Inde et du savoir-faire hérité des grands-mères, <br>
+         <br> ajouté à celui de quelques parents  ayant vécu en métropole, a donné une cuisine originale, et les produits locaux, poissons,langouste et légumes, bien travaillés.</u>
+        <br>
+        <br>
+     <center>On va appresant vous donner notre top 3 des plats guadeloupéens !</center>  
+        <br>
+        <br>
+         <h2>1)<u>Le colombo</u></h2>
+        <br>
+       Le colombo est une autre préparation très répandue en Guadeloupe. <br> Pour faire simple, il s’agit d’une sauce mélangeant de nombreuses épices, et principalement du curry <br>Ses influences sont donc typiquement indiennes. <br>
+     <br>Traditionnellement, le Colombo antillais contient du curcuma, du poivre noir, des graines de moutarde, du thym, du piment de Jamaïque, du curry et de la coriandre... <br>
+     <br>Cette sauce sert ensuite de marinade à de nombreuses viandes ou poissons locaux, pour donner naissance à un plat riche en saveurs.
+     <br>  Par sa couleur jaune et par son goût, le colombo est très proche du curry. <br>
+      <br>  Cependant, sa saveur est plus douce et moins épicée en général. Cette ressemblance n'est pas un hasard. <br>
+        </p>
+        <ol>
+            <img src="colombo.jpg"  
+            height="200x200"
+            
+        </ol>
+
+        <h2>2)<u>Dombrés ouassous</u></h2>
+    <br>
+    <br>
+     Une spécialité de la cuisine guadeloupéenne tété dwet (à se lécher les doigts), au sens figuré comme au sens propre. <br>
+     Les dombrés sont des petites boules de farine que l’on fait mijoter dans une sauce à la tomate et aux ouassous, des grosses crevettes de rivière. <br>
+     D’où la nécessité de s’y prendre avec les mains 😉 
+     <br>
+     <br>
+     A noter : les dombrés peuvent aussi être préparés avec des haricots rouges et des queues de cochon, ou encore avec des lentilles et du lard. <br>
+     Une version à base de patate douce plutôt que de farine de blé est aussi possible pour les intolérants au gluten. <br>
+        <ol>
+           <img src="dombres-de-crevettes.jpg"
+           height="200x200"
+       </ol>       
+    <br>
+    <br>  
+         <h3>3)<u>Les Cassaves</h3></u>
+         La cassave est consommée comme du pain pour tartiner ou pour éponger une sauce ou une soupe. <br>
+         Dans les antilles, les cassaves se consomment fourrées à la chiquetaille de morue ou féroce d'avocat, ou encore sucrées à la confiture de coco <br>
+         avec de la noix de coco rapée, de la pate de goyave, ou d'un autre fruit. <br>
+         Les recherches archéologiques ont prouvé qu'il fut primitivement cultivé il y a 4000 ans au Pérou. <br>
+         Cette culture, spécifique du continent américain, précéda le mais dans beaucoup de région. Mais l'alimentation précolombienne s'organisa rapidement <br>
+         autour du maïs et du manioc.
+    <br>
+    <br>
+        <ol>
+            <img src="cassave-de-guadeloupe.jpg"
+            height="200x200"
+        </ol>
+
+    
+    </body>
+</html>
+<br>
+<br>
+<br>
+<br> <center> <u>FAISONS DES PETITS-MOTS CROISES</center></u>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <br>
+  <br>
+  <br>
+  <title>Mots Croisés</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 30px;
+      height: 30px;
+      border: 0px solid white;
+      text-align: center;
+    }
+
+    .case {
+      font-weight: bold;
+      border: 2px solid black;
+      background: rgb(95, 40, 223);
+    }
+    .single-letter-input {
+            width: 20px; /* Ajustez la largeur souhaitée */
+    }
+  </style>
+</head>
+<body>
+  <h1>Mots Croisés</h1>
+  <table id="grille">
+    <tr> <!--Ligne 1-->
+      <td></td> <!--Case 1 de la ligne 1-->
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td class="case" onclick="editCell(this)"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="case" onclick="editCell(this)"></td>
+      <td></td>
+      <td></td>
+      <td></td>   
+      <td></td>
+    </tr>
+  </table>
+
+  <div id="definition">
+    <h2>Définitions :</h2>
+    <p id="definition1">1. Le colombo n'est pas à confondre avec...</p>
+    <p id="definition2">2. On peut aussi préparer les dombrés avec des haricots... </p>
+    <p id="definition3">3. On peut en manger avec de la confiture de coco et...</p>
+  </div>
+</body>
+<script>
+  // Fonction pour comparer deux tableaux
+  function comparerTableaux(tableau1, tableau2) {
+      if (tableau1.length !== tableau2.length) {
+          return false;
+      }
+      for (var i = 0; i < tableau1.length; i++) {
+        if (tableau1[i].length !== tableau2[i].length) {
+            return false;
+        }
+        for (var j = 0; j < tableau1[i].length; j++) {
+            if (tableau1[i][j] !== tableau2[i][j]) {
+                return false;
+            }
+        }
+      }
+      return true;
+  }
+
+  function editCell(cell) {
+    // Créer un champ d'entrée de texte
+    var input = document.createElement("input");
+    input.type = "text";
+    input.maxLength = 1; // Limiter la saisie à une seule lettre
+    input.className = "single-letter-input "; // Ajouter une classe pour le style
+
+    // Récupérer le contenu actuel de la cellule
+    var currentContent = cell.innerHTML.trim();
+
+    // Définir la valeur du champ d'entrée de texte comme le contenu actuel de la cellule
+    input.value = currentContent;
+
+    // Ajouter le champ d'entrée de texte à la cellule
+    cell.innerHTML = "";
+    cell.appendChild(input);
+
+    // Mettre le focus sur le champ d'entrée de texte
+    input.focus();
+
+    // Ajouter un gestionnaire d'événements pour détecter la fin de l'édition
+    input.addEventListener("blur", function () {
+        // Valider et mettre à jour le contenu de la cellule avec la valeur du champ d'entrée de texte (en majuscules)
+        var newValue = input.value.toUpperCase();
+        cell.innerHTML = newValue;
+        var grilleCompletee = recupererValeursTableau(); // récupère les valeurs du tableau
+        //console.log(grilleCompletee); // affiche dans la console
+
+        var grilleSolution = [
+                ['', '', '', '2', '', '', '', ''],
+                ['1', 'C', 'O', 'E', 'F', 'F', 'I', 'N'],
+                ['', '', '', 'C', '', '', '', ''],
+                ['', '', '3', 'O', '', '', '', ''],
+                ['', '', '', 'L', 'Y', 'C', 'E', 'E'],
+                ['', '', '', 'E', '', '', '', '']
+                                    ];
+        //alert(grille)
+        //alert(grilleCompletee)
+        if (comparerTableaux(grilleSolution, grilleCompletee)) {
+          alert("Trouvé");
+        }
+    });
+  }
+
+      // Fonction pour récupérer les valeurs des cellules
+      function recupererValeursTableau() {
+        // Récupérer le tableau par son identifiant
+        var tableau = document.getElementById("grille");
+
+        // Initialiser un tableau pour stocker les valeurs
+        var valeurs = [];
+
+        // Parcourir les lignes du tableau
+        for (var i = 0; i < tableau.rows.length; i++) {
+            // Initialiser un tableau pour stocker les valeurs de la ligne actuelle
+            var valeursLigne = [];
+
+            // Parcourir les cellules de la ligne actuelle
+            for (var j = 0; j < tableau.rows[i].cells.length; j++) {
+                // Ajouter la valeur de la cellule au tableau
+                valeursLigne.push(tableau.rows[i].cells[j].innerHTML);
+            }
+
+            // Ajouter le tableau de valeurs de la ligne au tableau principal
+            valeurs.push(valeursLigne);
+        }
+
+        return valeurs;
+    }
+
+    // Appeler la fonction et récupérer les valeurs
+    //var valeursDuTableau = recupererValeursTableau();
+
+    // Afficher les valeurs dans la console
+    //console.log(valeursDuTableau);
+</script>
+</html>

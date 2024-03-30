@@ -1,0 +1,53 @@
+<!--
+3/4 pts autonomie et implication
+2/3 pts pertinence du contenu de la page Web
+1/4 pts richesse du contenu HTML
+1/4 pts richesse du code CSS
+0/4 pts richesse du JavaScript
+0/1 pt site Web constitué et opérationnel
+7/20 Très insuffisant !
+-->
+
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>LA GUADELOUPE</title>
+        <body style ="background-color:rgba(23, 56, 10, 0.486)"></body>
+    </head>
+    <body>
+        <h1> L'histoire de la Guadeloupe</h1>   
+        <img src="" title = "image ile">    
+         <p>Quel personnage a découvert la Guadeloupe ? :<input type="text" id="answer"
+        onchange="traiterSaisie1()"></p>
+    </body>
+    <script>
+        function traiterSaisie1() // Traitement de la saisie
+        {
+            messageSaisie()=document.querySelector('#message');
+            if (messageSisie.value="ok")
+            {
+                alert('C/est bon !');
+            }
+            messageSaisie.value='';
+        }   
+    </script>
+        <form action="" method="post">
+        <div class="question">
+        1	 En quelle année le parc national de la Guadeloupe a t il été créé?
+        </div>
+        <div class="propositions">
+            <input type="radio" name="_0" value="1" />1970<br />
+            <input type="radio" name="_0" value="2" />1985<br />
+            <input type="radio" name="_0" value="3" />1989<br />
+            <input type="radio" name="_0" value="4" />2001<br />
+        </div><br />
+        <div class="question">
+        2 Qui a decouvert la guadeloupe?
+        </div>
+        <div class="propositions">
+            <input type="radio" name="_1" value="1" />Christophe Colomb<br />
+            <input type="radio" name="_1" value="2" /> Bartolomeu Dias<br />
+            <input type="radio" name="_1" value="3" />Vasco de Gama<br />
+        </div><br />
+        <div class="question">
+     

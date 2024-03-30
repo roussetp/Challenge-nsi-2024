@@ -1,0 +1,162 @@
+
+<!--
+3/4 pts Autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+19/20
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"> 
+    <title>LE PARC DES MAMELLES</title>
+    <style>
+        body {
+            background-image: url('rat.jpg');
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .vignette {
+            background-color: #6A5ACD; /* Couleur violette */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .vignette h1 {
+            color: #fff; /* Texte en blanc */
+            font-size: 24px; /* Taille de police plus grande */
+        }
+
+        .vignette-transparente {
+            background-color: rgba(0, 0, 0, 0.5); /* Couleur violette avec opacité */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .vignette-transparente h1 {
+            color: #fff; /* Texte en blanc */
+            font-size: 24px; /* Taille de police plus grande */
+        }
+
+        .bouton-container {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bouton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1E90FF; /* Couleur bleue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="vignette">
+            <h1>LE PARC DES MAMELLES</h1>
+            <p><a href="GUIEBA/motcroise.html">Mots croisés</a></p>
+        </div>
+    </header>
+
+    <div class="bouton-container">
+        <button class="bouton" onclick="redirectToQuiz()">Quiz</button>
+        <button class="bouton" onclick="redirectToGames()">Jeux</button>
+        <button class="bouton" onclick="redirectToMap()">Carte</button>
+        <button class="bouton" onclick="redirectToAnimals()">Animaux</button>
+    </div>
+
+    <section id="sect_un">
+        <div class="vignette-transparente">
+            <h1>À la découverte du Parc des Mamelles</h1>
+            <p>
+                Le Parc des Mamelles, situé au cœur du massif de la Basse-Terre en Guadeloupe, est un sanctuaire de la biodiversité 
+                où se côtoient une flore luxuriante et une faune variée. Avec plus de 2 hectares de forêt tropicale préservée, 
+                le parc abrite de nombreuses espèces végétales et animales endémiques, offrant aux visiteurs une expérience 
+                unique et immersive dans un environnement naturel préservé.
+            </p>
+        </div>
+    </section>
+
+    <section id="sect_deux">
+        <div class="vignette-transparente">
+            <h1>Les sentiers de randonnée</h1>
+            <p>
+                Les sentiers de randonnée du Parc des Mamelles offrent aux visiteurs l'opportunité de découvrir la richesse 
+                de la faune et de la flore de la région. Des itinéraires variés permettent d'explorer les différents écosystèmes 
+                du parc, des forêts denses aux cascades rafraîchissantes. Que vous soyez amateur de randonnée ou simplement 
+                en quête de nature, les sentiers du Parc des Mamelles sauront vous séduire.
+            </p>
+        </div>
+    </section>
+
+    <section id="sect_trois">
+        <div class="vignette-transparente">
+            <h1>La conservation de la biodiversité</h1>
+            <p>
+                Le Parc des Mamelles s'engage activement dans la conservation de la biodiversité de la Guadeloupe. 
+                À travers des programmes de préservation et de réhabilitation des espèces menacées, le parc œuvre 
+                pour préserver l'équilibre écologique de la région. Les actions de sensibilisation et d'éducation 
+                environnementale contribuent également à sensibiliser le public à l'importance de la protection de la nature.
+            </p>
+        </div>
+    </section>
+
+    <section id="sect_quatre">
+        <div class="vignette-transparente">
+            <h1>La vie nocturne dans la forêt</h1>
+            <p>
+                La forêt tropicale du Parc des Mamelles ne dort jamais. À la nuit tombée, de nombreuses espèces 
+                animales sortent de leur cachette pour vaquer à leurs occupations nocturnes. Des sorties guidées 
+                permettent aux visiteurs d'observer cette vie nocturne fascinante et d'admirer des espèces 
+                telles que les chauves-souris, les grenouilles et les insectes lumineux.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function redirectToQuiz() {
+            window.location.href = "quiz.html";
+        }
+
+        function redirectToGames() {
+            window.location.href = "quiz_animaux.html";"GUIEBA/motcroise.html"
+        }
+
+        function redirectToMap() {
+            window.location.href = "carte.html";
+        }
+
+        function redirectToAnimals() {
+            // Redirection vers la page des animaux
+        }
+    </script>
+
+</body>
+</html>

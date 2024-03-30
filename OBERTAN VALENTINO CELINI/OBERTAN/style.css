@@ -1,0 +1,84 @@
+body
+{
+    color: black;
+    background-image: url("pyramide.jpg");
+    background-attachment: fixed ;
+    background-size: cover;
+}
+header 
+{
+    display: flex;
+    font-family: cursive;
+    border: solid 5px #dbac11;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: #fada4c;
+    box-shadow: 12px 12px 5px rgba(252, 242, 105, 0.5);
+    padding: 25px;
+    margin: auto;
+    width : 800px ;
+    text-decoration: wavy;
+}
+#sommaire nav
+{
+    background-color: rgb(248, 234, 151);
+    font-family: cursive;
+    justify-content: space-between;
+    box-shadow: 12px 12px 5px rgba(7, 6, 1, 0.5) ;
+    width : 900px;
+    opacity : 0.9 ;
+    flex: 0,5;
+    font-size: 1.5em ;
+    font-weight: bold ;
+    font-family: Lucida Handwriting;
+    margin: auto;
+    border: solid 5px #dbac11;
+    margin-top: 30;
+}
+#quizz
+{
+    background-color: rgb(248, 234, 151);
+    font-family: cursive;
+    justify-content: space-between;
+    box-shadow: 12px 12px 5px rgba(7, 6, 1, 0.5) ;
+    width : 900px;
+    opacity : 0.9 ;
+    flex: 0,5;
+    font-size: 1.5em ;
+    font-weight: bold ;
+    font-family: Lucida Handwriting;
+    margin: auto;
+    border: solid 5px #dbac11;
+    margin-top: 30;
+}
+#sommaire nav h1
+{
+    text-align: center;
+    font-size: 40;
+    text-decoration: underline;
+}
+#intro p1
+{
+    font-weight: bold;
+    font-size:19px;
+}
+nav ul
+{
+    font-size: 1.25em ;
+}
+nav li
+{
+    margin-bottom: 20px;
+}
+nav a
+{
+    font-family: cursive;
+    text-decoration: none ;
+    color: #080825 ;
+    font-weight: bold ;
+}
+nav a:hover
+{
+    color: #b55100 ;
+    font-style : italic ;
+}

@@ -1,0 +1,260 @@
+<!--
+4/4 pts autonomie et implication
+3/3 pts pertinence du contenu de la page Web
+4/4 pts richesse du contenu HTML
+4/4 pts richesse du code CSS
+4/4 pts richesse du JavaScript
+1/1 pts site Web constitué et opérationnel
+20/20 Très bonne implication
+-->
+
+<html>
+
+<head>
+    <title>Pris en maille</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <section id="gif">
+        <p><img src="papillonj.gif" alt="">
+            <img src="papillonj.gif" alt="">
+        </p>
+        <h1>
+            <p>Pris en maille</p>
+        </h1>
+    </section>
+    <section id="accueil">
+        <h1>
+            <p>QUIZZ</p>
+        </h1>
+
+
+    </section>
+    <section id="quizz">
+
+
+</body>
+
+<head>
+    <meta charset="utf-8">
+
+
+
+    <script language="JavaScript">
+
+
+        var rep = new Array;  // 
+        var faite = new Array;  // 
+        var score = 0;  // 
+
+        // 
+        rep[1] = "a";
+        rep[2] = "d";
+        rep[3] = "c";
+        rep[4] = "c";
+        rep[5] = "b";
+        rep[6] = "a";
+        rep[7] = "d";
+        rep[8] = "b";
+
+
+        // 
+        //
+        //   
+        function test(question, reponse) {
+
+            if (reponse != rep[question]) {
+                if (!faite[question]) {  // 
+                    faite[question] = -1;  // 
+                    alert("Raté !   C'était la ." + rep[question] + " ");
+                }
+                else {
+                    alert("Cette question à déjà été répondue.");
+                }
+            }
+            else {
+                if (!faite[question]) {
+                    faite[question] = -1;
+                    score++; //
+                    alert("Bien joué ! Plus fort tu meurs ! ");
+                }
+                else {
+                    alert("Top tard mon reuf.");
+                }
+            }
+        }
+
+        //
+
+        function afficherLesResultats() {
+
+            resultats = document.getElementById("resultats");
+            // 
+            // 
+            if (score == 8) { resultats.innerHTML = "<h1>Ton score est de : 8/8 </h1>" }
+            else if (score == 7) { resultats.innerHTML = "<h1>Ton score est de : 7/8 </h1>" }
+            else if (score == 6) { resultats.innerHTML = "<h1>Ton score est de : 6/8 </h1>" }
+            else if (score == 5) { resultats.innerHTML = "<h1>Ton score est de : 5/8 </h1>" }
+            else if (score == 4) { resultats.innerHTML = "<h1>Ton score est de : 4/8 </h1>" }
+            else if (score == 3) { resultats.innerHTML = "<h1>Ton score est de : 3/8 </h1>" }
+            else if (score == 2) { resultats.innerHTML = "<h1>Ton score est de : 2/8 </h1>" }
+            else if (score == 1) { resultats.innerHTML = "<h1>Ton score est de : 1/8 </h1>" }
+            else if (score == 0) { resultats.innerHTML = "<h1>Ton score est de : 0/8 </h1>" }
+
+
+
+
+            appreciation = document.getElementById("appreciation");
+            //
+            // 
+            if (score == 8) { appreciation.innerHTML = "<h2>OH !! GENIE !!</h2>" }
+            else if (score > 5 && score <= 7) { appreciation.innerHTML = "<h2>Pas mal ! Pas loin pas loin...</h2>" }
+            else if (score >= 3 && score <= 5) { appreciation.innerHTML = "<h2>Tu t'es pas foulé.e faire</h2>" }
+            else if (score < 3) { appreciation.innerHTML = "<h2>Lire n'est pas si dûr!!!! :)</h2>" }
+
+
+            // 
+            faite = new Array;
+            score = 0;
+            document.quest.reset();
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="bloc_page">
+        <section >
+
+            <form name="quest">
+
+                <h1>On va voir si tu n'as rien zapper :)</h1>
+                </br>
+
+                <!--  -->
+                <div class=bloc_question> <!-- -->
+                    <h2>1 ➜ Où se trouve La douche ?</h2> <!--  -->
+                    <p>
+                        <!-- -->
+                        <br><input type="radio" name="1" value="a" onclick="test(1, this.value)">a.Saint-François
+                        <br><input type="radio" name="1" value="b" onclick="test(1, this.value)">b.Dans ma salle de bain
+                        <br><input type="radio" name="1" value="c" onclick="test(1, this.value)">c.Dehais
+                        <br><input type="radio" name="1" value="d" onclick="test(1, this.value)">d.Morne à l'eau
+                    </p>
+                </div>
+                </br></br> <!--  -->
+
+                <div class=bloc_question>
+                    <h2>2 ➜Où se situe le Bassin bleu ?</h2>
+                    <p>
+                        <br><input type="radio" name="2" value="a" onclick="test(2, this.value)">a.Capesterre
+                        <br><input type="radio" name="2" value="b" onclick="test(2, this.value)">b.heuuuu...
+                        <br><input type="radio" name="2" value="c" onclick="test(2, this.value)">c.Les Abymes
+                        <br><input type="radio" name="2" value="d" onclick="test(2, this.value)">d.Gourbyere
+                    </p>
+                </div>
+                </br></br>
+
+                <div class=bloc_question>
+
+                    <h2>3 ➜ <p><img src="plage-sable-noir-guadeloupe1.jpg" alt="???"></p>
+                        <p>Où est-ce ?</p>
+                    </h2>
+                    <p>
+                        <br><input type="radio" name="3" value="a" onclick="test(3, this.value)">a.Abymes
+                        <br><input type="radio" name="3" value="b" onclick="test(3, this.value)">b.Petit-Bourg
+                        <br><input type="radio" name="3" value="c" onclick="test(3, this.value)">c.Gourbyere
+                        <br><input type="radio" name="3" value="d" onclick="test(3, this.value)">d.Dehais
+                    </p>
+                </div>
+                </br></br>
+
+                <div class=bloc_question>
+                    <h2>4 ➜ Qui est le saint patron des Cuisinieres ?</h2>
+                    <p>
+                        <br><input type="radio" name="4" value="a" onclick="test(4, this.value)">a.Saint Louis
+                        <br><input type="radio" name="4" value="b" onclick="test(4, this.value)">b.Saint Martin
+                        <br><input type="radio" name="4" value="c" onclick="test(4, this.value)">c.Saint Laurent
+                        <br><input type="radio" name="4" value="d" onclick="test(4, this.value)">d.Saint Joseph
+                    </p>
+                </div>
+                </br></br>
+
+                <div class=bloc_question>
+                    <h2>5 ➜ Quel est ce plat ?</h2>
+                    <p><img src="colombo.webp" height="200x200" alt="???"> </p>
+                    <p>
+                        <br><input type="radio" name="5" value="a" onclick="test(5, this.value)">a.Poulet au curry
+                        <br><input type="radio" name="5" value="b" onclick="test(5, this.value)">b.Colombo
+                        <br><input type="radio" name="5" value="c" onclick="test(5, this.value)">c.Bébélé
+                        <br><input type="radio" name="5" value="d" onclick="test(5, this.value)">d.Trip et ti fig
+                    </p>
+                </div>
+                </br></br>
+
+                <div class=bloc_question>
+                    <h2>6 ➜ quelle île set réputée pour ses casaves ? </h2>
+                    <p>
+                        <br><input type="radio" name="6" value="a" onclick="test(6, this.value)">a.Marie-Galante
+                        <br><input type="radio" name="6" value="b" onclick="test(6, this.value)">b.Désirade
+                        <br><input type="radio" name="6" value="c" onclick="test(6, this.value)">c.Sainte Lucie
+                        <br><input type="radio" name="6" value="d" onclick="test(6, this.value)">d.L'ilet Caret
+                    </p>
+                </div>
+                </br></br>
+
+                <div class=bloc_question>
+                    <h2>7 ➜ quel est l'ingredient principal des dombrés ? </h2>
+                    <p>
+                        <br><input type="radio" name="7" value="a" onclick="test(7, this.value)">a.L'amour
+                        <br><input type="radio" name="7" value="b" onclick="test(7, this.value)">b.Fécule de maÏs
+                        <br><input type="radio" name="7" value="c" onclick="test(7, this.value)">c.Eau
+                        <br><input type="radio" name="7" value="d" onclick="test(7, this.value)">d.Farine
+                    </p>
+                </div>
+
+                <div class=bloc_question>
+                    <h2>8 ➜ On dit merci à qui pour toutes ces super infos ? </h2>
+                    <p>
+                        <br><input type="radio" name="8" value="a" onclick="test(8, this.value)">a.Louise Maurine et
+                        Célia
+                        <br><input type="radio" name="8" value="b" onclick="test(8, this.value)">b.Anaïs Emilie et Naïma
+                        <br><input type="radio" name="8" value="c" onclick="test(8, this.value)">c.Baptiste Amandine et
+                        Léa
+                        <br><input type="radio" name="8" value="d" onclick="test(8, this.value)">d.Julien Mathis et
+                        Thomas
+                    </p>
+                </div>
+                </br></br>
+
+
+                <p><input type="button" name="Resultats" value="Résultats" id="bouton_resultats"
+                        onclick="afficherLesResultats()"></p> <!---->
+
+                <div id="resultats"></div> <!--  -->
+                <div id="appreciation"></div> <!---->
+                </br>
+            </form>
+
+            <div class="bouton_fin"> <!--  -->
+                <p>
+                    <a href="index.html">Retour à la page principale</a>
+                <p><a href="HATCHI/INDEX.HTML">Dans ton filet</a></p>
+                <p><a href="ELIEZER/Gastronomie.html">Repas d'aventure</a></p>
+
+                </p>
+            </div>
+        </section>
+
+        <!--  -->
+
+
+
+
+
+    </div>
+</body>
+</section>
+
+</html>
