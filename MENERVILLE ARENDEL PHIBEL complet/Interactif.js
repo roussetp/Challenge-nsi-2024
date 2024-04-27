@@ -28,346 +28,86 @@ document.addEventListener('DOMContentLoaded', function() {
     var coeffinHautPoint = document.getElementById('coeffinHautPoint');
   
     coeffinHautPoint.addEventListener('click', function(event) {
-      var Accueil = document.getElementById('Accueil');
+      var imgcoeffinHautClick = document.getElementById('imgcoeffinHautClick');
   
-      var x = event.clientX;
-      var y = event.clientY;
+      var x = event.offsetX;
+      var y = event.offsetY;
       alert('Position du clic : x = ' + x + ', y = ' + y); //Pop-up
-      if ((x > 242) && (x < 262) && (y > 825) && (y < 845)){ //Intervalle de position x et y
-        alert("Bien joué ! Vous avez trouvé l'acceuil !") //Pop-up
+      if ((x > 142) && (x < 162) && (y > 366) && (y < 386)){ //Intervalle de position x et y
+        alert("Bien joué ! Vous avez trouvé l'accueil !") //Pop-up
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint2= document.getElementById('coeffinHautPoint2');
-  
-    coeffinHautPoint2.addEventListener('click', function(event) {
-      var BatimentA = document.getElementById('BatimentA');
-  
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 231) && (x < 251) && (y > 575) && (y < 595)){
-        alert("Bien joué ! Vous avez trouvé le bâtiment A !")
+      else if ((x > 118) && (x < 138) && (y > 137) && (y < 157)){ //Intervalle de position x et y
+        alert("Bien joué ! Vous avez trouvé le Bâtiment A !") //Pop-up
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint3= document.getElementById('coeffinHautPoint3');
-
-    coeffinHautPoint3.addEventListener('click', function(event) {
-      var CDI = document.getElementById('CDI');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 272) && (x < 292) && (y > 680) && (y < 700)){
+      else if ((x > 203) && (x < 223) && (y > 256) && (y < 276)){
         alert("Bien joué ! Vous avez trouvé le CDI !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint4= document.getElementById('coeffinHautPoint4');
-
-    coeffinHautPoint4.addEventListener('click', function(event) {
-      var VS = document.getElementById('VS');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 270) && (x < 290) && (y > 645) && (y < 665)){
-        alert("Bien joué ! Vous avez trouvé la vie scolaire !")
+      else if ((x > 181) && (x < 201) && (y > 193) && (y < 213)){
+        alert("Bien joué ! Vous avez trouvé la Vie Scolaire !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint5= document.getElementById('coeffinHautPoint5');
-
-    coeffinHautPoint5.addEventListener('click', function(event) {
-      var Permanence = document.getElementById('Permanence');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 253) && (x < 273) && (y > 640) && (y < 660)){
-        alert("Bien joué ! Vous avez trouvé la salle de permanence !")
+      else if ((x > 155) && (x < 175) && (y > 164) && (y < 184)){
+        alert("Bien joué ! Vous avez trouvé la Salle de Permanence !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint6= document.getElementById('coeffinHautPoint6');
-
-    coeffinHautPoint6.addEventListener('click', function(event) {
-      var Forum = document.getElementById('Forum');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 263) && (x < 283) && (y > 661) && (y < 681)){
-        alert("Bien joué ! Vous avez trouvé le forum !")
+      else if ((x > 174) && (x < 194) && (y > 176) && (y < 196)){
+        alert("Bien joué ! Vous avez trouvé le Forum !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint7_1= document.getElementById('coeffinHautPoint7_1');
-
-    coeffinHautPoint7_1.addEventListener('click', function(event) {
-      var Toilettes_1 = document.getElementById('Toilettes_1');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 272) && (x < 292) && (y > 649) && (y < 669)){
-        alert("Bien joué ! Vous avez trouvé les toilettes des garçons !")
+      else if ((x > 138) && (x < 158) && (y > 184) && (y < 204)){
+        alert("Bien joué ! Vous avez trouvé les Toilettes des garçons !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint7_2= document.getElementById('coeffinHautPoint7_2');
-
-    coeffinHautPoint7_2.addEventListener('click', function(event) {
-      var Toilettes_2 = document.getElementById('Toilettes_2');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 240) && (x < 260) && (y > 695) && (y < 715)){
-        alert("Bien joué ! Vous avez trouvé les toilettes des filles !")
+      else if ((x > 187) && (x < 207) && (y > 141) && (y < 161)){
+        alert("Bien joué ! Vous avez trouvé les Toilettes des filles !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint8= document.getElementById('coeffinHautPoint8');
-
-    coeffinHautPoint8.addEventListener('click', function(event) {
-      var BatimentB = document.getElementById('BatimentB');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 281) && (x < 301) && (y > 669) && (y < 689)){
-        alert("Bien joué ! Vous avez trouvé le Batiment B !")
+      else if ((x > 191) && (x < 211) && (y > 267) && (y < 287)){
+        alert("Bien joué ! Vous avez trouvé le Bâtiment B !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint9= document.getElementById('coeffinHautPoint9');
-
-    coeffinHautPoint9.addEventListener('click', function(event) {
-      var Administration = document.getElementById('Administration');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 258) && (x < 278) && (y > 693) && (y < 713)){
-        alert("Bien joué ! Vous avez trouvé l'administration !")
+      else if ((x > 171) && (x < 191) && (y > 287) && (y < 307)){
+        alert("Bien joué ! Vous avez trouvé l'Administration !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint10= document.getElementById('coeffinHautPoint10');
-
-    coeffinHautPoint10.addEventListener('click', function(event) {
-      var BatimentC = document.getElementById('BatimentC');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 304) && (x < 324) && (y > 736) && (y < 756)){
-        alert("Bien joué ! Vous avez trouvé le batiment C !")
+      else if ((x > 237) && (x < 257) && (y > 332) && (y < 352)){
+        alert("Bien joué ! Vous avez trouvé le Bâtiment C !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint11= document.getElementById('coeffinHautPoint11');
-
-    coeffinHautPoint11.addEventListener('click', function(event) {
-      var Cafétéria = document.getElementById('Cafétéria');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 316) && (x < 336) && (y > 727) && (y < 747)){
-        alert("Bien joué ! Vous avez trouvé la cafétéria !")
+      else if ((x > 247) && (x < 267) && (y > 305) && (y < 325)){
+        alert("Bien joué ! Vous avez trouvé la Cafétéria !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint12= document.getElementById('coeffinHautPoint12');
-
-    coeffinHautPoint12.addEventListener('click', function(event) {
-      var Kiosque = document.getElementById('Kiosque');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 320) && (x < 340) && (y > 711) && (y < 731)){
+      else if ((x > 262) && (x < 282) && (y > 257) && (y < 277)){
         alert("Bien joué ! Vous avez trouvé le Kiosque !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint13= document.getElementById('coeffinHautPoint13');
-
-    coeffinHautPoint13.addEventListener('click', function(event) {
-      var BatimentD = document.getElementById('BatimentD');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 353) && (x < 373) && (y > 812) && (y < 832)){
-        alert("Bien joué ! Vous avez trouvé le Batiment D !")
+      else if ((x > 319) && (x < 339) && (y > 391) && (y < 411)){
+        alert("Bien joué ! Vous avez trouvé le Bâtiment D !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint14= document.getElementById('coeffinHautPoint14');
-
-    coeffinHautPoint14.addEventListener('click', function(event) {
-      var BatimentE = document.getElementById('BatimentE');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 402) && (x < 422) && (y > 779) && (y < 799)){
-        alert("Bien joué ! Vous avez trouvé le Batiment E !")
+      else if ((x > 392) && (x < 412) && (y > 319) && (y < 339)){
+        alert("Bien joué ! Vous avez trouvé le Bâtiment E !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint15= document.getElementById('coeffinHautPoint15');
-
-    coeffinHautPoint15.addEventListener('click', function(event) {
-      var Cantine = document.getElementById('Cantine');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 362) && (x < 382) && (y > 738) && (y < 758)){
-        alert("Bien joué ! Vous avez trouvé la cantine !")
+      else if ((x > 335) && (x < 355) && (y > 255) && (y < 275)){
+        alert("Bien joué ! Vous avez trouvé la Cantine !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint16= document.getElementById('coeffinHautPoint16');
-
-    coeffinHautPoint16.addEventListener('click', function(event) {
-      var Infirmerie = document.getElementById('Infirmerie');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 393) && (x < 413) && (y > 721) && (y < 741)){
+      else if ((x > 379) && (x < 399) && (y > 210) && (y < 230)){
         alert("Bien joué ! Vous avez trouvé l'infirmerie !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint17= document.getElementById('coeffinHautPoint17');
-
-    coeffinHautPoint17.addEventListener('click', function(event) {
-      var Internat = document.getElementById('Internat');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 432) && (x < 452) && (y > 595) && (y < 615)){
+      else if ((x > 451) && (x < 461) && (y > 157) && (y < 177)){
         alert("Bien joué ! Vous avez trouvé l'internat !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint18= document.getElementById('coeffinHautPoint18');
-
-    coeffinHautPoint18.addEventListener('click', function(event) {
-      var Plateau_sportif = document.getElementById('Plateau_sportif');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 350) && (x < 370) && (y > 579) && (y < 599)){
-        alert("Bien joué ! Vous avez trouvé le plateau sportif !")
+      else if ((x > 311) && (x < 331) && (y > 100) && (y < 120)){
+        alert("Bien joué ! Vous avez trouvé le Plateau sportif !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint19= document.getElementById('coeffinHautPoint19');
-
-    coeffinHautPoint19.addEventListener('click', function(event) {
-      var Vestiaire_Local = document.getElementById('Vestiaire_Local');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 435) && (x < 455) && (y > 561) && (y < 581)){
-        alert("Bien joué ! Vous avez trouvé les vestiaire et le local !")
+      else if ((x > 448) && (x < 468) && (y > 58) && (y < 78)){
+        alert("Bien joué ! Vous avez trouvé les Vestiaires et le local !")
       }
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint20= document.getElementById('coeffinHautPoint20');
-
-    coeffinHautPoint20.addEventListener('click', function(event) {
-      var Salle_de_danse = document.getElementById('Salle_de_danse');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 416) && (x < 436) && (y > 548) && (y < 568)){
-        alert("Bien joué ! Vous avez trouvé la salle de danse !")
+      else if ((x > 417) && (x < 437) && (y > 34) && (y < 54)){
+        alert("Bien joué ! Vous avez trouvé la Salle de danse !")
       }
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint21= document.getElementById('coeffinHautPoint21');
-
-    coeffinHautPoint21.addEventListener('click', function(event) {
-      var BatimentJ = document.getElementById('BatimentJ');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 220) && (x < 240) && (y > 625) && (y < 645)){
-        alert("Bien joué ! Vous avez trouvé le Batiment J !")
+      else if ((x > 105) && (x < 125) && (y > 114) && (y < 134)){
+        alert("Bien joué ! Vous avez trouvé le Bâtiment J !")
       }
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var coeffinHautPoint22= document.getElementById('coeffinHautPoint22');
-
-    coeffinHautPoint22.addEventListener('click', function(event) {
-      var Salle_de_musique = document.getElementById('Salle_de_musique');
-
-      var x = event.clientX;
-      var y = event.clientY;  
-      alert('Position du clic : x = ' + x + ', y = ' + y);
-      if ((x > 187) && (x < 207) && (y > 652) && (y < 672)){
-        alert("Bien joué ! Vous avez trouvé la salle de musique !")
+      else if ((x > 53) && (x < 73) && (y > 134) && (y < 154)){
+        alert("Bien joué ! Vous avez trouvé la Salle de musique !")
       }
-    });
-  });
+      else {
+        alert("Raté ! Réésayez encore ! 😉");
+      }
+    }
+  )});
+
 
 //Boutons interatifs
 document.querySelector('"#Lieu1').style.visibility="hidden";
@@ -627,4 +367,29 @@ function myFunction(e) {
     else {
     x.style.display = "none";
     }
+}
+
+
+
+/* Syldrina */
+function calcul_point()
+{
+       nombreDeQuestion=6;
+       nom=new Array();
+       nomLength=new Array();
+       point=0;
+       for(n=0;n<=(nombreDeQuestion-1);n++)
+       {
+          nom[n]=document.getElementsByName("choix_"+n);
+          nomLength[n]=nom[n].length;
+          for(q=0;q<=(nomLength[n]-1);q++)
+          {
+            if(nom[n][q].checked==true)
+            {point=point+eval(nom[n][q].value);} 
+            else
+            {point=point;}
+
+          }
+       }
+       document.quizz_1.ptn.value=point;
 }

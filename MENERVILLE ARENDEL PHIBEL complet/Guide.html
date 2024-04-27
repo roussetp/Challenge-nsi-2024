@@ -2,15 +2,19 @@
 	<head>
 		<title> Decouverte du Lycee Charles Coeffin </title> <!--Nom de la page web-->
 		<link rel = "stylesheet" href = "Mise en page.css"> <!--Mise en forme de la page-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
 		<nav>
 			<ul>
 				<li><a href="index.html">Acceuil</a></li>
-				<li><a href="#about">Jeu</a></li>
+				<li><a href="jeu.html">Jeu</a></li>
 				<li><a href="Guide.html">Guide</a></li>
 				<li><a href="Quizz.html">Quizz</a></li>
-				<li><a href="#contact">Vie du lycée</a></li>
+				<li><a href="vie du lycée.html">Vie du lycée</a></li>
+				<li><a href="questionnaire.html">Questionnaire</a></li>
 			</ul>
-			<img id="Logo" src="Logo.jpg" alt="Logo">
+			<a href=""><img src="images/Logo.jpg" alt="" height="48px" id="logo1"></a>
 		</nav>
 	</head>
 	<body>
@@ -45,8 +49,8 @@
 					<article>
 						<ul> <li> Voici où se trouve le lycée Charles Coeffin dans le monde : 🗺️ </li> </ul>
 						<div class="cartePoint">  <!-- Image -->
-							<img id="imageGpCoeffin" src="Carte Guadeloupe_Charles Coeffin.png" alt="Charles Coeffin">
-							<img id="vousÊtesIci" src="vous êtes ici.jpg" alt="Vous êtes ici">
+							<img id="imageGpCoeffin" src="images/Carte Guadeloupe_Charles Coeffin.png" alt="Charles Coeffin">
+							<img id="vousÊtesIci" src="images/vous êtes ici.jpg" alt="Vous êtes ici">
 						</div>
 						<blockquote><p2> Il se trouve en Guadeloupe, plus précisément dans la commune de Baie-Mahault (97122), Chemin de Trioncelle. </p2></blockquote>
 						<ul> <li> Voici un lien Google Maps pour accéder au lieu : </li> </ul> <!--Lien Google Map -->
@@ -66,7 +70,7 @@
 				<div>
 					<article2>
 						<ul> <li> Dans cette partie, nous verrons les différents lieux de l'école d'en haut. 📷 </li> </ul> <!--Parties de l'école sous différentes formes-->
-						<blockquote><img src="coeffin d'en  haut.jpg" alt="Accueil" /></blockquote>
+						<blockquote><img src="images/coeffin d'en  haut.jpg" alt="Accueil" /></blockquote>
 						<blockquote><p2>N'hésitez pas à cacher les noms des lieux afin de tenter de les mémoriser !</p2></blockquote>
 							<ol>
 								<button2 onclick="afficherLieu1()" title="Afficher lieu 1" >Afficher lieu n°1</button2>
@@ -74,24 +78,24 @@
 								<div id="Lieu1">
 								<br> <li> Accueil </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo1" src="point géographique.png" alt="PointGéo1">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo1" src="images/point géographique.png" alt="PointGéo1">
 								</div>
 								<br> <button2 onclick="afficherLieu2()" title="Afficher lieu 2" >Afficher lieu n°2</button2>
 								<button3 onclick="cacher2()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu2">
 								<br> <li> Bâtiment A </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo2" src="point géographique.png" alt="PointGéo2">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo2" src="images/point géographique.png" alt="PointGéo2">
 								</div>
 								<br> <button2 onclick="afficherLieu3()" title="Afficher lieu 3" >Afficher lieu n°3</button2>
 								<button3 onclick="cacher3()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu3">
 								<br> <li> Centre de Documentation et d'Information (CDI) </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo3" src="point géographique.png" alt="PointGéo3">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo3" src="images/point géographique.png" alt="PointGéo3">
 								</div>
 								<p2> Le CDI fait partie du bâtiment A. </p2>
 								<br><p2> Il contient de nombreux livres pour les lecteurs ! </p2>
@@ -100,8 +104,8 @@
 								<div id="Lieu4">
 								<br> <li> Vie scolaire </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo4" src="point géographique.png" alt="PointGéo4">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo4" src="images/point géographique.png" alt="PointGéo4">
 								</div>
 								<p2> La vie scolaire est rattachée au bâtiment A. </p2>
 								<br><br> <button2 onclick="afficherLieu5()" title="Afficher lieu 5" >Afficher lieu n°5</button2>
@@ -109,8 +113,8 @@
 								<div id="Lieu5">
 								<br> <li> Salle de Permance </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo5" src="point géographique.png" alt="PointGéo5">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo5" src="images/point géographique.png" alt="PointGéo5">
 								</div>
 								<p2> La salle de permanence est rattachée au bâtiment A. </p2>
 								<br><br> <button2 onclick="afficherLieu6()" title="Afficher lieu 6" >Afficher lieu n°6</button2>
@@ -118,8 +122,8 @@
 								<div id="Lieu6">
 								<br> <li> Forum </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo6" src="point géographique.png" alt="PointGéo6">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo6" src="images/point géographique.png" alt="PointGéo6">
 								</div>
 								<p2> Le Forum est sous la vie scolaire et la salle de permanence. </p2>
 								<br><br> <button2 onclick="afficherLieu7()" title="Afficher lieu 7" >Afficher lieu n°7</button2>
@@ -131,16 +135,16 @@
 								<div id="Lieu7_1">
 								<p> 7.1 Toilettes garçons </p></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo7_1" src="point géographique.png" alt="PointGéo7_1">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo7_1" src="images/point géographique.png" alt="PointGéo7_1">
 								</div>
 								<br> <button2 onclick="afficherLieu7_2()" title="Afficher lieu 7.2" >Afficher lieu n°7.2</button2>
 								<button3 onclick="cacher7_2()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu7_2">
 								<p> 7.2 Toilettes filles </p></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo7_2" src="point géographique.png" alt="PointGéo7_2">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo7_2" src="images/point géographique.png" alt="PointGéo7_2">
 								</div>
 								<br> <p2> Les toilettes sont près du Forum. </p2>
 								<br><br> <button2 onclick="afficherLieu8()" title="Afficher lieu 8" >Afficher lieu n°8</button2>
@@ -148,16 +152,16 @@
 								<div id="Lieu8">
 								<br> <li> Bâtiment B </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo8" src="point géographique.png" alt="PointGéo8">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo8" src="images/point géographique.png" alt="PointGéo8">
 								</div>
 								<br> <button2 onclick="afficherLieu9()" title="Afficher lieu 9" >Afficher lieu n°9</button2>
 								<button3 onclick="cacher9()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu9">
 								<br> <li> Administration </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo9" src="point géographique.png" alt="PointGéo9">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo9" src="images/point géographique.png" alt="PointGéo9">
 								</div>
 								<p2> L'administration fait partie du bâtiment B. </p2>
 								<br><br> <button2 onclick="afficherLieu10()" title="Afficher lieu 10" >Afficher lieu n°10</button2>
@@ -165,16 +169,16 @@
 								<div id="Lieu10">
 								<br> <li> Bâtiment C </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo10" src="point géographique.png" alt="PointGéo10">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo10" src="images/point géographique.png" alt="PointGéo10">
 								</div>
 								<br> <button2 onclick="afficherLieu11()" title="Afficher lieu 11" >Afficher lieu n°11</button2>
 								<button3 onclick="cacher11()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu11">
 								<br> <li> Cafétéria </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo11" src="point géographique.png" alt="PointGéo11">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo11" src="images/point géographique.png" alt="PointGéo11">
 								</div>
 								<p2> La Cafétéria fait partie du bâtiment C. </p2>
 								<br><br> <button2 onclick="afficherLieu12()" title="Afficher lieu 12" >Afficher lieu n°12</button2>
@@ -182,8 +186,8 @@
 								<div id="Lieu12">
 								<br> <li> Kiosque </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo12" src="point géographique.png" alt="PointGéo12">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo12" src="images/point géographique.png" alt="PointGéo12">
 								</div>
 								<p2> Le Kiosque est près de la cafétéria. </p2>
 								<br><br> <button2 onclick="afficherLieu13()" title="Afficher lieu 13" >Afficher lieu n°13</button2>
@@ -191,24 +195,24 @@
 								<div id="Lieu13">
 								<br> <li> Bâtiment D </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo13" src="point géographique.png" alt="PointGéo13">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo13" src="images/point géographique.png" alt="PointGéo13">
 								</div>
 								<br> <button2 onclick="afficherLieu14()" title="Afficher lieu 14" >Afficher lieu n°14</button2>
 								<button3 onclick="cacher14()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu14">
 								<br> <li> Bâtiment E </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo14" src="point géographique.png" alt="PointGéo14">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo14" src="images/point géographique.png" alt="PointGéo14">
 								</div>
 								<br> <button2 onclick="afficherLieu15()" title="Afficher lieu 15" >Afficher lieu n°15</button2>
 								<button3 onclick="cacher15()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu15">
 								<br> <li> La cantine </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo15" src="point géographique.png" alt="PointGéo15">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo15" src="images/point géographique.png" alt="PointGéo15">
 								</div>
 								<p2> La cantine est le bâtiment F. </p2>
 								<br><br> <button2 onclick="afficherLieu16()" title="Afficher lieu 16" >Afficher lieu n°16</button2>
@@ -216,8 +220,8 @@
 								<div id="Lieu16">
 								<br> <li> Infirmerie </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo16" src="point géographique.png" alt="PointGéo16">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo16" src="images/point géographique.png" alt="PointGéo16">
 								</div>
 								<p2> L'infirmerie est derrière la cantine. </p2>
 								<br><br> <button2 onclick="afficherLieu17()" title="Afficher lieu 17" >Afficher lieu n°17</button2>
@@ -225,8 +229,8 @@
 								<div id="Lieu17">
 								<br> <li> Internat </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo17" src="point géographique.png" alt="PointGéo17">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo17" src="images/point géographique.png" alt="PointGéo17">
 								</div>
 								<p2> L'internat est près de l'infirmerie. </p2>
 								<br><br> <button2 onclick="afficherLieu18()" title="Afficher lieu 18" >Afficher lieu n°18</button2>
@@ -234,16 +238,16 @@
 								<div id="Lieu18">
 								<br> <li> Plateau sportif </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo18" src="point géographique.png" alt="PointGéo18">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo18" src="images/point géographique.png" alt="PointGéo18">
 								</div>
 								<br> <button2 onclick="afficherLieu19()" title="Afficher lieu 19" >Afficher lieu n°19</button2>
 								<button3 onclick="cacher19()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu19">
 								<br> <li> Vestiaires et local </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo19" src="point géographique.png" alt="PointGéo19">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo19" src="images/point géographique.png" alt="PointGéo19">
 								</div>
 								<p2> Les vestiaires et le local sont ensembles près du plateau sportif.</p2>
 								<br><br> <button2 onclick="afficherLieu20()" title="Afficher lieu 20" >Afficher lieu n°20</button2>
@@ -251,8 +255,8 @@
 								<div id="Lieu20">
 								<br> <li> Salle de danse </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo20" src="point géographique.png" alt="PointGéo20">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo20" src="images/point géographique.png" alt="PointGéo20">
 								</div>
 								<p2> Les vestiaires et la salle de danse sont ensembles près du plateau sportif.</p2>
 								<br><br> <button2 onclick="afficherLieu21()" title="Afficher lieu 21" >Afficher lieu n°21</button2>
@@ -260,16 +264,16 @@
 								<div id="Lieu21">
 								<br> <li> Bâtiment J </li></div>
 								<div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo21" src="point géographique.png" alt="PointGéo21">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo21" src="images/point géographique.png" alt="PointGéo21">
 								</div>
 								<br> <button2 onclick="afficherLieu22()" title="Afficher lieu 22" >Afficher lieu n°22</button2>
 								<button3 onclick="cacher22()" title="Cacher" >Cacher ce lieu</button3>
 								<div id="Lieu22">
 								<br> <li> La salle de Musique </li></div>
 								<br><div class="coeffinHautPoint">
-									<img id="imageHautCoeffin" src="coeffin d'en  haut.jpg" alt="imageHautCoeffin">
-									<img id="PointGéo22" src="point géographique.png" alt="PointGéo22">
+									<img id="imageHautCoeffin" src="images/coeffin d'en  haut.jpg" alt="imageHautCoeffin">
+									<img id="PointGéo22" src="images/point géographique.png" alt="PointGéo22">
 								</div>
 								<p2> La salle de musique est derrière le bâtiment J. </p2>
 								<br><br> <li> Salle de classe </li>
