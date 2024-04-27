@@ -1,0 +1,39 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+html {
+  background-image: url("https://i.pinimg.com/564x/01/cd/1e/01cd1ed023c5fde2a5e264f0b756caee.jpg"); 
+  background-size: 150px;
+}
+img {
+  display:block ;
+  margin: 10 auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px 0;
+  color:#00A0B5;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FFEBFA;
+  padding: 0 20px 20px 20px;
+  border: 3px solid pink;
+}
+img {
+width : 400px;
+height : 400px;
+}
+li{
+  color: #801363;
+}

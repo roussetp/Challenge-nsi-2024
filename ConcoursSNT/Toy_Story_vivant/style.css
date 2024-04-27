@@ -1,0 +1,88 @@
+
+body 
+{
+	background-size: 90em;
+	background-image: url(https://www.nationhive.com/sites/www.nationhive.com/files/styles/game_landing/public/games/highlight/disneypixar-toy-story-2-buzz-leclair-la-rescousse.jpg?itok=G0czzemp)
+}
+
+h1
+{
+	color:white;
+	text-align: justify;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px grey;
+}
+h2
+{
+	color: red;
+	text-align: center;
+	font-size: 100px;
+	font-weight:bold;
+	text-shadow: 2px 2px 4px grey;
+	border: 3px grey solid;
+	border-radius: 10px;
+	box-shadow: 6px 6px 0px blue;
+}
+
+h3
+{
+	color: orange;
+	font-size: 35px;
+}
+
+h4
+{
+	color: green;
+	font-size: 35px;
+}
+
+h5
+{
+	color:orange;
+	text-align:left;
+	font-size:35px;
+}
+
+h6
+{
+	color: white;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px grey;
+}
+
+a
+{
+	color: pink;
+}
+
+img
+{
+	max-height: 200px;
+}
+
+p
+{
+	font-size: 25px;
+	color: White;
+	text-shadow: 2px 2px 2px grey;
+}
+
+p1
+{
+	color: red;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px black;
+}
+
+p2
+{
+	color: black;
+	font-size: 15px;
+}
+
+p3
+{
+	color: White;
+	font-size: 40px;
+}
+

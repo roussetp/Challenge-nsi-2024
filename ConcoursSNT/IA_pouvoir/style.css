@@ -1,0 +1,97 @@
+h1
+{
+	color: white;
+	font-size: 4em;
+	text-align: center;
+	
+}
+
+body
+{
+	background-size: 90em;
+	/*background-image: url(https://techtoday.in.ua/wp-content/uploads/2022/08/artificial-intelligence-example-s.xafb901b8.jpg)
+   */
+    background-color: bisque;
+}
+
+h2
+{
+	color: white;
+	text-align: center;
+	font-size: 2,5em;
+}
+
+p
+{
+	color: white;
+	text-align: justify;
+	font-size: 20px;
+}
+
+p1
+{
+	color: white;
+	text-align: right;
+	font-size: 20px;
+}
+
+p2
+{
+	color: white;
+	text-align: left;
+	font-size: 20px;
+}
+
+p3
+{
+	color: deeppink;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+p4
+{
+	color: royalblue;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+
+
+p5
+{
+	color: white;
+	text-align: left;
+	font-size: 15px;
+}
+
+p7
+{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	font-style: italic;
+    text-decoration: underline;
+}
+
+p8
+{
+	text-align: justify;
+	color: white;
+	font-size: 20px;
+}
+
+img 
+{
+	float: right;
+	max-height: 700px;
+	scroll-margin-left: 20px;
+}
+
+a
+{
+   color: white;
+}

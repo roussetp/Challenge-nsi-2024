@@ -1,0 +1,164 @@
+<!--
+1.5/2 pts justesse code HTML
+0.5/2 pts présentation code HTML
+3/3 pts richesse et pertinence du contenu
+7/7 pts richesse du code HTML (puces / images / liens etc.)
+
+1.5/2 pts justesse code CSS
+4/4 pts richesse code CSS
+17.5/20 Très bon travail. Le code est très mal présenté !
+-->
+
+<!DOCTYPE html> 
+<html> 	
+     <style>
+    <body	{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+    .cnn-image {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+	margin-left: 0.9%;
+	margin-top: 0.9%;
+	
+    }
+
+    header {
+    SCROLLAMOUNT: 10;
+	background-color: #CC0000; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    }
+
+
+
+    nav {
+    background-color: #7b241c; /* Rouge foncé */
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    }
+
+
+    nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    }
+
+    nav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    nav a.active {
+    background-color: #5B0000;
+    color: white;
+    }
+
+
+    section {
+    padding: 50px;
+    }
+
+    footer {
+    background-color: #CC0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    }
+
+    .musk-image {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+
+
+
+</style>  
+	
+	<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNN</title>
+        <link rel="stylesheet" href="./style.css" /> 	</head>
+
+	<body> 
+        <header>
+            <MARQUEE scrollamount="19"><h1>CNN Breaking News : Elon Musk est mort.</h1></MARQUEE>
+        </header>
+        <img class="cnn-image" src="data:image/png;base64,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" alt="Description de l'image" style="position: absolute; top: 0; left: 0;"> 
+            
+
+			<nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#world">World</a>
+            <a href="#politics">Politics</a>
+            <a href="#business">Business</a>
+            <a href="#science">Science</a>
+            <a href="#technology">Technology</a>
+            <a href="#health">Health</a>
+            <a href="#entertainment">Entertainment</a>
+        </nav>
+
+
+                
+        <h1>🔴BREAKING NEWS...🔴</h1>
+
+        <h2>La Mort Du Milliardaire Elon Musk.</h2>
+
+
+        
+
+<img src="data:image/jpeg;base64,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" width="200" height="200" alt="Description de l'image">
+
+
+<h2>C'est avec un cœur lourd que je vous adresse la nouvelle de la disparition tragique du magnat de la technologie, Elon Musk...</h2>
+        <h2>Elon Musk, fondateur de SpaceX et Tesla, est décédé en Floride aujourd'hui, terrassé par un arrêt cardiaque soudain. La nouvelle de sa mort a envoyé des ondes de choc à travers le monde, laissant derrière elle un vide immense dans la communauté technologique et au-delà...
+            Sa passion pour les énergies renouvelables et sa vision de rendre l'humanité multiplanétaire étaient contagieuses. Elon Musk était bien plus qu'un homme d'affaires. Il était un rêveur qui a osé défier les limites de l'impossible.
+        </h2>
+
+        <h5> Écris par Daivy Appatore le mercredi 3 janvier En Guadeloupe à 15h56&copy</h5>
+
+ <HR>
+    
+ <h1>Une énorme éruption volcanique ravage le Japon. 🌋 </h1>
+
+        
+<img src="data:image/jpeg;base64,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" width="300" height="200" alt="Description de l'image">
+
+
+
+
+<h2>Ont vous informer d'un événement majeur qui se déroule en ce moment même.
+une éruption volcanique d'une ampleur rare, qui secoue le Japon . </h2>
+
+<h2>Les autorités locales ont déclenché des évacuations d'urgence, demandant à la population de quitter immédiatement la zone. Les équipes de secours sont en route, mais la situation est critique.</h2>
+        
+<h2>Les autorités s'efforcent de coordonner les efforts pour assurer la sécurité de tous.</h2>
+
+
+<footer>
+            <p>2023 Daivy Appatore / Tous droits réservés &copy .</p>
+        </footer>
+	
+    </body>
+</html>

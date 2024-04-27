@@ -1,0 +1,28 @@
+ body /* parametre de la page par défaut*/
+{
+   /*background:gray; /* couleur de fond unie ou */
+   background-image: url("beige.jfif");/* image de fond */
+   background-attachment: fixed; /* le fond restera fixe*/
+   background-repeat: repeat; /* le motif se répétera */
+}		
+#section1 
+{
+   background-color: #fdc6cd;  
+	width : 800px ;
+}
+#section2
+{
+	background-color: #FDE6FF;
+	width : 1000px ;
+	
+}
+#section3
+{
+   background-color: rgb(248, 213, 219);
+   width: 1300px;
+}
+#section4
+{
+   background-color: rgb(255, 230, 230);
+   width: 900px;
+}
