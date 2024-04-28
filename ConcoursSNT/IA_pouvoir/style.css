@@ -9,7 +9,7 @@ h1
 body
 {
 	background-size: 90em;
-	background-image: url(https://techtoday.in.ua/wp-content/uploads/2022/08/artificial-intelligence-example-s.xafb901b8.jpg)
+	background-image: url("fond.jpg");
    
     /*background-color: bisque;*/
 }
