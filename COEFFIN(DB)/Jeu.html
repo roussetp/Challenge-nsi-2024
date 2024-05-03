@@ -59,7 +59,7 @@
         <ul>
             <li><a href="BRELLE/pageinfo.html">Infos</a></li>
             <li><a href="Quizz.html">Quizz</a></li>
-            <li><a href="Jeu.html">Jeu</a></li>
+            <li><a href="index.html">Acceuil</a></li>
             <li><a href="BRELLE/MotCroise complet.html">Mots croisés</a></li>
         </ul>
         
@@ -92,7 +92,7 @@
       var x = 100 * ((event.clientX - imageRect.left) / image.width);
       var y = 100 * ((event.clientY - imageRect.top) / image.height);
       
-      alert('Position du clic : x = ' + x + ', y = ' + y);
+      
       distance = Math.sqrt(((x - questions[num_question][1])**2) + ((y - questions[num_question][2])**2))
         if (distance < 4){
           alert("Woulo");

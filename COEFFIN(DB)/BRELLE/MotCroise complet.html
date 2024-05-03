@@ -30,7 +30,7 @@
     .case {
       font-weight: bold;
       border: 2px solid black;
-      background: rgb(122, 223, 40);
+      background: rgb(131, 161, 105);
     }
     .single-letter-input {
             width: 20px; /* Ajustez la largeur souhaitée */
@@ -59,9 +59,18 @@
       <td></td>
       <td>7</td>
       <td></td>
-      <td ></td>
+      <td></td>
       <td></td>
       <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
@@ -79,6 +88,7 @@
       <td></td>
       <td></td>
       <td>8</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -98,6 +108,7 @@
       <td class="case" onclick="editCell(this)"></td>
       <td class="case" onclick="editCell(this)"></td>
       <td class="case" onclick="editCell(this)"></td>
+      <td></td>
       
     </tr>
     <tr>
@@ -139,7 +150,6 @@
       <td class="case" onclick="editCell(this)"></td>
       <td></td>
       <td></td>
-      <td></td>
     <tr>
       <td></td>
       <td class="case" onclick="editCell(this)"></td>
@@ -158,12 +168,7 @@
       <td class="case" onclick="editCell(this)"></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+
       
     </tr>
     <tr>
@@ -182,12 +187,6 @@
       <td>9</td>
       <td></td>
       <td class="case" onclick="editCell(this)"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -209,12 +208,7 @@
       <td class="case" onclick="editCell(this)"></td>
       <td class="case" onclick="editCell(this)"></td>
       <td class="case" onclick="editCell(this)"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+
     </tr>  
     <tr>
       <td></td>
@@ -234,12 +228,7 @@
       <td class="case" onclick="editCell(this)"></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+
     </tr>
     <tr>
       <td></td>
@@ -259,12 +248,7 @@
       <td class="case" onclick="editCell(this)"></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+  
     </tr>
     <tr>
       <td></td>
@@ -284,12 +268,27 @@
       <td></td>
       <td></td>
       <td></td>
+
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
     </tr>
     
   </table>
@@ -304,7 +303,8 @@
     <p id="definition6">6. Matière où on etudie les langages de programmation.</p>
     <p id="definition6">7. Examen de fin du lycée. </p>
     <p id="definition6">8. Rédisdence des internes.</p>
-    <p id="definition6">9. Maison des lycéen. </p>
+    <p id="definition6">9. Maison des lycéen.</p>
+    <p>ps : si aucun message d'alerte n'apparait en validant les mots, c'est que vous avez réussi =)</p>
     <button onclick="validerMots()">Valider les mots</button>
 
   </div>
@@ -392,17 +392,17 @@
 
     // Exemple de grille de solution
     var grilleSolution = [
-      ['', '', '', '7', '', '', '', '6', '', '', '', '', '', '', '', '',''],
-      ['', '4', '', 'B', '', '2', '', 'N', '', '5', '', '', '', '', '8', ''],
-      ['1', 'C', 'H', 'A', 'R', 'L', 'E', 'S', '-', 'C', 'O', 'E', 'F', 'F', 'I', 'N'],
-      ['', 'A', '', 'C', '', 'Y', '', 'I', '', 'D', '', '', '', '', 'N', ''],
-      ['', 'F', '', '', '', 'C', '', '', '', 'I', '', '', '', '', 'T', ''],
-      ['', 'E', '', '', '', 'E', '', '', '', '', '', '', '', '', 'E', '',],
-      ['', 'T', '', '', '', 'E', '', '', '', '', '', '', '9', '', 'R', '',],
+      ['', '', '', '7', '', '', '', '6', '', '', '', '', '', '', '', '', ''],
+      ['', '4', '', 'B', '', '2', '', 'N', '', '5', '', '', '', '', '8', '',''],
+      ['1', 'C', 'H', 'A', 'R', 'L', 'E', 'S', '-', 'C', 'O', 'E', 'F', 'F', 'I', 'N', ''],
+      ['', 'A', '', 'C', '', 'Y', '', 'I', '', 'D', '', '', '', '', 'N', '',''],
+      ['', 'F', '', '', '', 'C', '', '', '', 'I', '', '', '', '', 'T', '',''],
+      ['', 'E', '', '', '', 'E', '', '', '', '', '', '', '', '', 'E', '',''],
+      ['', 'T', '', '', '', 'E', '', '', '', '', '', '', '9', '', 'R', '',''],
       ['', 'E', '', '', '', '', '', '', '3', 'T', 'E', 'R', 'M', 'I', 'N', 'A','L'],
-      ['', 'R', '', '', '', '', '', '', '', '', '', '', 'D', '', 'A', ''],
-      ['', 'I', '', '', '', '', '', '', '', '', '', '', 'L', '', 'T', ''],
-      ['', 'A', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+      ['', 'R', '', '', '', '', '', '', '', '', '', '', 'D', '', 'A', '',''],
+      ['', 'I', '', '', '', '', '', '', '', '', '', '', 'L', '', 'T', '',''],
+      ['', 'A', '', '', '', '', '', '', '', '', '', '', '', '', '', '',''],
 ,
     ];
 
