@@ -16,7 +16,7 @@
 
   .menubox {
     height: 1000px;
-    width: 100%;
+    width: 90%;
     border-style: double;
     border-radius: 3%;
     padding: 0%;
@@ -661,20 +661,10 @@ body
   margin: 0%;
 }
 
-.menubox {
-  height: 1000px;
-  width: 90%;
-  border-style:solid ;
-  border-radius: 5%;
-  box-sizing: content-box;
-  padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #ffffff;
-  box-shadow: inset 5em 5em 100em rgb(0, 195, 255);
-}
 
-.menubox iframe {
+
+
+/* .menubox iframe {
   color: #ffffff;
   margin: 0%;
   border-style:solid ;
@@ -683,12 +673,13 @@ body
   width: 40%;
   height: 50%;
   box-shadow: 10px 5px 5px rgb(255, 255, 255);
-}
+} */
 
 .menubox iframe guide {
   width: 0%;
   height: 0%;
 }
+
 
 head {
   margin: 20px;
@@ -908,4 +899,10 @@ head {
   color: #ffffff;
   text-align: center;
   font-size: 18px;
+}
+
+#lien_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

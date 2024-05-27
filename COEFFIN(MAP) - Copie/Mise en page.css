@@ -1,13 +1,51 @@
 body /*Paramètres principale*/
 {
-    background-color: rgb(134, 202, 207); /*Fond de la page web*/
+    background-color: lightblue; /*Fond de la page web*/
     color: black; /*Couleur principale*/
     font-size: 20px; /*Taille principale*/
     text-align: justify; /*Allignement*/
     font-family: Arial, Helvetica, sans-serif; /*Police d'écriture*/
     margin: 0%; /*Marge*/
 }
+#logo1{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 50px;
+}
 
+nav {
+
+  background-color: #006078;
+  overflow: hidden;
+  height: 50px;
+}
+
+nav ul {
+  margin: 0%;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  
+  float: left;
+}
+
+nav li a {
+  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  border: 20px 20%;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: grey;
+  transition: 500ms;
+}
 p2 /*Paramètres paragraphe p2*/
 {
     color: rgb(15, 55, 185); /*Couleur*/
@@ -278,7 +316,7 @@ nav li a:hover {
 button2:hover{ /*Paramètres bouton au survol de la souris*/
     background-color: #006078;
     border: 2px solid #37b2d1;
-    box-shadow: 10px 5px 5px #bfffbd;
+    box-shadow: 10px 5px 5px #83d0e4;
     color: #ffffff;
     text-align: center;
     font-size: 18px;
@@ -449,8 +487,8 @@ header{ /*Paramètres en-tête*/
 
 #PointGéo7_1{
   position: absolute;
-  top: 16px;
-  left: 88px;
+  top: 45px;
+  left: 58px;
   width: 20%;
   height: 25%;
   opacity: 1;
@@ -459,8 +497,8 @@ header{ /*Paramètres en-tête*/
 
 #PointGéo7_2{
   position: absolute;
-  top: 45px;
-  left: 58px;
+  top: 16px;
+  left: 88px;
   width: 20%;
   height: 25%;
   opacity: 1;
@@ -632,7 +670,9 @@ header{ /*Paramètres en-tête*/
 
 #coeffinHautPoint img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  width: 500px;
+  height: 500px;
 }
 
 #clickPosition { /*Paramètres position du clique*/
